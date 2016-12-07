@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import manifold
 import pandas as pd
-import xgboost as xgb
+#import xgboost as xgb
 
 
 class CountBubble():
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     StartTime = 3.1
     EndTime = 3.3
     sample = CountBubble(filename, StartTime, EndTime)
-    #sample.ThresholdMethod(threshold)
-    #sample.draw(threshold)
-    sample.ManifoldTrain(Num)
-    print sample.ManifoldNum()
+    sample.ThresholdMethod(threshold)
+    sample.draw(threshold)
+    #sample.ManifoldTrain(Num)
+    #print sample.ManifoldNum()
