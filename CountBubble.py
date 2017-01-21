@@ -126,9 +126,11 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
+        print '-'*30 + 'Preparing the WPE' + '-'*30
         self.smooth(smoothlevel)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
+        print '-'*30 + 'Finish preparing the WPE' + '-'*30
         
     def ManifoldTrain(self, neibour = 30, component = 2,  model = 'LLE'):
         """Transfer the high dimension WPE to lower dimension using the manifold
@@ -154,6 +156,7 @@ class CountBubble():
                         }
         self.ManifoldModel = manifoldlist[model]
         self.ManifoldModel.fit(self.EnergyArray)
+        print '-'*30 + 'Finish training the manifold learning' + '-'*30
         return self.ManifoldModel
     
     def ManifoldTransform(self):

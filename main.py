@@ -1,4 +1,5 @@
 import CountBubble as CB
+import warnings
 
 def GetandPrepare(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel):
     bc.GetAudio(filename, StartTime, EndTime)
@@ -10,13 +11,14 @@ def PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, ma
     new = GetandPrepare(new, newfile, start, end, smoothlevel, windows, step, packetlevel)
     return new.SupervisedPredicting(manifold, clf)
 
+warnings.filterwarnings("ignore")
 filename = 'B18h01m41s17jul2014y.wav'
 filenamewithlabel = '.wav'
 labelfile = '.csv'
-TrainStartTime = 2.0
-TrainEndTime = 2.1
-PredictStartTime = 4.0
-PredictEndTime = 4.1
+TrainStartTime = 5.0
+TrainEndTime = 8.0
+PredictStartTime = 8.0
+PredictEndTime = 10.0
 smoothlevel = 3
 packetlevel = 8
 windows = 2**packetlevel
