@@ -10,27 +10,61 @@ from sklearn import cluster
 
 
 class CountBubble():
-    def __init__(self, filename, start, end):
-        self.df = wavio.read(filename)
+    def __init__(self):
+        self.filename = ''
+        sns.set_style("white")
+    
+    def GetAudio(self, filename, start = 0, end = 0.1):
+        """Obtain the certain time section audio data from the origin wav file.
+        Parameters
+        ----------
+        filename: origin audio file
+        start : float, start time of the wanted audio signal.
+        end : float, end time of the wanted audio signal.
+        """
+        if self.filename != filename:
+            self.filename = filename
+            self.df = wavio.read(filename)
         self.start = start
         self.end = end
         self.data = self.df.data[int(self.start * self.df.rate) : int(self.end * self.df.rate)]
     
-    def smooth(self,n):
-        self.smoothdata = self.data[n:] / float(n+1)
-        for i in range(n):
-            self.smoothdata = self.smoothdata + self.data[i:i-n] / float(n+1)
+    def smooth(self,windowlength):
+        """smooth the audio data for pre-processing, using a window length 
+        forward average method.
+        Parameters
+        ----------
+        windowlength: int, the length to average.
+        """
+        self.smoothdata = self.data[windowlength:] / float(windowlength+1)
+        for i in range(windowlength):
+            self.smoothdata = self.smoothdata + self.data[i:i-windowlength] / float(windowlength+1)
         
     def ThresholdMethod(self, threshold = 7000):
+        """The simplest method for counting the shrimp with the determination
+        of the threshold. Fast but not accurate
+        Parameters
+        ----------
+        threshold: float, threshold we used, variated in different dataset and
+        need to be determined manually.
+        """
         a = self.smoothdata > threshold
         a = a.astype(int)
         identify = (a[1:]-a[:-1]) == 1
         print '-'*40
-        print "{0} bubbles appear from {1} s to {2} s".format(np.ceil(sum(identify)[0] / 2.0), self.start, self.end)
+        print "{0} bubbles appear from {1} s to {2} s, from threshold method".format(np.ceil(sum(identify)[0] / 2.0), self.start, self.end)
         print '-'*40
         return identify
     
     def CutwithWindows(self, windows, step):
+        """cut the smooth audio signal into different frame for processing with
+        certain window length and resolution.
+        Parameters
+        ----------
+        windows: int, the data point of each sample.
+        step: the distance between each windows, must be smaller than windows and
+        it decide the resolution of the sample with windows.
+        """
         T = []
         self.windows = windows
         self.step = step
@@ -42,6 +76,14 @@ class CountBubble():
             print 'Smooth data need to be done first.'
     
     def waveletPacket(self, packlevel):
+        """After obtaining the frame, the Wavelet Packet Energy (WPE) feature 
+        is obtain from the frame using the Wavelet Packe method.
+        Parameters
+        ----------
+        packlevel: int, the quantity of the frequency bands of the frequency. Larger
+        packlevel, higher frequency resolution and more generated features. 
+        2^ packlevel must smaller than the frame data.
+        """
         self.Energe = np.zeros([len(self.cutclip), packlevel+1, 2**packlevel])
         T = []
         for clipindex in range(len(self.cutclip)):
@@ -59,8 +101,38 @@ class CountBubble():
             temp.append(maxnum)
             T.append(temp)
         self.EnergyArray = np.matrix(T)
-    
-    def ManifoldTrain(self, neibour = 30, component = 2):
+     
+    def PrepareWPE(self, smoothlevel, windows, step, packetlevel):
+        """Prepare the WPE from the audio data
+        Parameters
+        ----------
+        smoothlevel: int, the length to average.
+        windows: int, the data point of each sample.
+        step: the distance between each windows, must be smaller than windows and
+        it decide the resolution of the sample with windows.
+        packlevel: int, the quantity of the frequency bands of the frequency. Larger
+        packlevel, higher frequency resolution and more generated features. 
+        2^ packlevel must smaller than the frame data.
+        """
+        sample.smooth(smoothlevel)
+        sample.CutwithWindows(windows, step)
+        sample.waveletPacket(packetlevel)
+        
+    def ManifoldTrain(self, neibour = 30, component = 2,  model = 'LLE'):
+        """Transfer the high dimension WPE to lower dimension using the manifold
+        learning. Different methods of manifold learning can be selected as:
+            1. Locally Linear Embedding; 
+            2. Spectral Embedding; 
+            3. Isomap; 
+            4. MDS; 
+            5. TSNE.
+        Parameters
+        ----------
+        neibour: int, the quantity of distance used calculated samples.
+        component: int, the dimension that convert to.
+        model: string, the model you select for manifold learning
+        """
+        print '-'*30 + 'Training the manifold learning' + '-'*30
         manifoldlist = {'LLE': manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0), 
                         'Spectral': manifold.SpectralEmbedding(n_components=component,
                                 n_neighbors=neibour,random_state=0),
@@ -68,35 +140,74 @@ class CountBubble():
                        'MDS': manifold.MDS(n_components=component, max_iter=100),
                        'tsne': manifold.TSNE(n_components=component, init='pca', random_state=0)
                         }
-        mManifoldTransform = manifoldlist['LLE']
-        self.manifold = mManifoldTransform.fit_transform(self.EnergyArray)
+        self.ManifoldModel = manifoldlist[model]
+        self.ManifoldModel.fit(self.EnergyArray)
     
-    def ClusterTrain(self, component = 2):
+    def ManifoldTransform(self):
+        """using manifold learning to transform the high dimensional features to
+        low dimension using the model trained in self.ManifoldTrain()
+        """
+        return self.ManifoldModel.transform(self.EnergyArray)
+    
+    def ClusterTrain(self, component = 2, model = 'Agglomerative'):
+        """Using cluster method to divide the sample into different category
+        unsupervisedly. Different model can be used.
+            1. Spectral Clustering
+            2. Agglomerative Clustering
+            3. MiniBatch KMeans
+        Parameters
+        ----------
+        component: int, the dimension that convert to.
+        model: string, the model you select for manifold learning
+        """
+        print '-'*30 + 'Clustering' + '-'*30
         clusterlist = {'spectral': cluster.SpectralClustering(n_clusters=component,eigen_solver='arpack',affinity="nearest_neighbors", random_state=0),
                       'Agglomerative': cluster.AgglomerativeClustering(n_clusters=component, linkage='ward'), #nice
                       'MiniBatch': cluster.MiniBatchKMeans(n_clusters=component)}
-        MyCluster = clusterlist['Agglomerative']
-        self.ClusterResult = MyCluster.fit_predict(self.EnergyArray)
-    
-    def VisualizeFrame(self,minnum,maxnum,startpoint,plt, color = 'r'):
-        plt.plot(startpoint*np.array([self.step,self.step]),[minnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
-        plt.plot(startpoint*np.array([self.step,self.step])+self.windows,[minnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
-        plt.plot(np.array([startpoint*self.step,startpoint*self.step+self.windows]),[maxnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
-        plt.plot(np.array([startpoint*self.step,startpoint*self.step+self.windows]),[minnum,minnum],c = color, linewidth=2.0, linestyle='dashed')
+        MyCluster = clusterlist[model]
+        return MyCluster.fit_predict(self.EnergyArray)
+        
+    """visualization part"""
+    def VisualizeFrame(self,plt,minnum,maxnum,framelocation, color = 'r'):
+        """Plot a frame on the signal with a window length
+        Parameters
+        ----------
+        minnum: int, the upper bound of the frame.
+        maxnum: int, the lower bound of the frame.
+        step: the distance between each windows, must be smaller than windows and
+        it decide the resolution of the sample with windows.
+        framelocation: int, the start position of the frame
+        plt: matplotlib figure, pass the figure here
+        color: string, color for the frame
+        """
+        plt.plot(framelocation*np.array([self.step,self.step]),[minnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
+        plt.plot(framelocation*np.array([self.step,self.step])+self.windows,[minnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
+        plt.plot(np.array([framelocation*self.step,framelocation*self.step+self.windows]),[maxnum,maxnum],c = color, linewidth=2.0, linestyle='dashed')
+        plt.plot(np.array([framelocation*self.step,framelocation*self.step+self.windows]),[minnum,minnum],c = color, linewidth=2.0, linestyle='dashed')
     
     def VisualizeThreshold(self, thresshold):
+        """Visualize the result of the threshold method. Before draeing, the
+        threshold method will be excuted in this function.
+        ----------
+        thresshold: float, threshold we used, variated in different dataset and
+        need to be determined manually.
+        """
         plt.plot(self.ThresholdMethod(threshold) * 100000, 'r')
         plt.plot(self.smoothdata[1:],'k')
         plt.show() 
     
     def VisualizeWP(self):
-        maxnum = max(self.smoothdata)
-        minnum = min(self.smoothdata)
+        """Visualize the WPE matrix and the corresponding rime sequence signal
+        at the same time.
+        """
+        alldata = self.data
+        maxnum = max(alldata)
+        minnum = min(alldata)
         n = 3
         for clipindex in range(n,10):
             plt.figure(figsize=(16,8))
             plt.subplot(121)
-            plt.plot(self.smoothdata[self.windows*(clipindex-n+1):self.windows*(clipindex+10)])
+            plt.plot(alldata[self.windows*(clipindex-n+1):self.windows*(clipindex+10)])
             plt.plot(np.array([self.windows,self.windows]) * (n-1),[-20000,20000],c = 'r')
             plt.plot(np.array([self.windows,self.windows]) * n,[-20000,20000],c = 'r')
             plt.ylim([maxnum,minnum])
@@ -107,24 +218,32 @@ class CountBubble():
             plt.colorbar()
             plt.show()
     
-    def VisualizeDimensionReduction(self, animation = 1):
-        drawdata = self.manifold
+    def VisualizeDimensionReduction(self, animation = 1, speed = 0.01):
+        """Visualize the manifold learning result by transfering the high dimension
+        data to low and visible dimension data. 
+        ----------
+        animation: bool, the switch of the figure presentation method. If it is
+        on, the frame will continue to move forward while if it is off, the figure
+        will present one by one manually.
+        speed: the speed to play the animation
+        """
+        drawdata = self.ManifoldTransform()
+        alldata = self.data
         loop = len(drawdata)
-        speed = 0.002
-        startpoint = 2
-        for index in range(startpoint,loop):
+        framelocation = 2
+        for index in range(framelocation,loop):
             plt.figure(figsize=(16,8))
             plt.subplot(121)
             plt.scatter(drawdata[:,0],drawdata[:,1], c = 'k')
             plt.scatter(drawdata[index,0],drawdata[index,1],c = 'r', s = 120)
             plt.subplot(122)
-            data = self.smoothdata[self.step*(index-startpoint):(self.step*(index-startpoint)+self.windows*10)]
+            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
             plt.plot(data, c = 'k')
-            minnum = min(self.smoothdata[self.step*(index):(self.step*index+self.windows)])*1.1
-            maxnum = max(self.smoothdata[self.step*(index):(self.step*index+self.windows)])*1.1
-            self.VisualizeFrame(minnum,maxnum,startpoint,plt)
+            minnum = min(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            maxnum = max(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            self.VisualizeFrame(plt,minnum,maxnum,framelocation)
             plt.xlim([0,self.windows * 10])
-            plt.ylim([min(self.smoothdata),max(self.smoothdata)])
+            plt.ylim([min(alldata),max(alldata)])
             plt.suptitle('Frame '+ str(index) + '/' + str(loop-1), fontsize=24)
             if animation:
                 plt.ion()
@@ -133,20 +252,29 @@ class CountBubble():
             else:
                 plt.show()
     
-    def VisualizeCluster(self, animation = 1):
-        loop = len(self.EnergyArray)
-        speed = 0.002
-        startpoint = 2
-        color = ['r','b','g','y']
-        for index in range(startpoint,loop):
+    def VisualizeCluster(self, animation = 1, speed = 0.01):
+        """Visualize the cluster result of the data. Different categories will be
+        present by different frame colors.
+        ----------
+        animation: bool, the switch of the figure presentation method. If it is
+        on, the frame will continue to move forward while if it is off, the figure
+        will present one by one manually.
+        speed: the speed to play the animation
+        """
+        drawdata = self.ClusterTrain()
+        alldata = self.data
+        loop = len(drawdata)
+        framelocation = 5
+        color = ['r','b','g','y','c','m']
+        for index in range(framelocation,loop):
             plt.figure(figsize=(16,8))
-            data = self.smoothdata[self.step*(index-startpoint):(self.step*(index-startpoint)+self.windows*10)]
+            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
             plt.plot(data, c = 'k')
-            minnum = min(self.smoothdata[self.step*(index):(self.step*index+self.windows)])*1.1
-            maxnum = max(self.smoothdata[self.step*(index):(self.step*index+self.windows)])*1.1
-            self.VisualizeFrame(minnum,maxnum,startpoint,plt, color[self.ClusterResult[index]])
+            minnum = min(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            maxnum = max(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            self.VisualizeFrame(plt, minnum,maxnum,framelocation, color[drawdata[index]])
             plt.xlim([0,self.windows * 10])
-            plt.ylim([min(self.smoothdata),max(self.smoothdata)])
+            plt.ylim([min(alldata),max(alldata)])
             plt.title('Frame '+ str(index) + '/' + str(loop-1), fontsize=24)
             if animation:
                 plt.ion()
@@ -157,24 +285,21 @@ class CountBubble():
 
 if __name__ == "__main__":
     filename = 'B18h01m41s17jul2014y.wav'
-    threshold = 8000
-    StartTime = 3.0
-    EndTime = 4.0
+    TrainStartTime = 3.0
+    TrainEndTime = 3.5
+    PredictStartTime = 3.5
+    PredictEndTime = 4.0
     smoothlevel = 3
     packetlevel = 8
     windows = 2**packetlevel
     step = windows / 2
     neibour = 40 # this one looks good
     component = 2
-    sample = CountBubble(filename, StartTime, EndTime)
-    sns.set_style("white")
-    sample.smooth(smoothlevel)
-    sample.CutwithWindows(windows, step)
-    sample.waveletPacket(packetlevel)
-    #sample.VisualizeWP()
-    #sample.ThresholdMethod(threshold)
-    #sample.VisualizeThreshold(threshold)
+    sample = CountBubble()
+    sample.GetAudio(filename, PredictStartTime, PredictEndTime)
+    sample.PrepareWPE(smoothlevel, windows, step, packetlevel)
     #sample.ManifoldTrain(neibour, component)
-    #sample.VisualizeDimensionReduction()
-    sample.ClusterTrain()
+    #sample.GetAudio(filename, PredictStartTime, PredictEndTime)
+    #sample.PrepareWPE(smoothlevel, windows, step, packetlevel)
+    #sample.VisualizeDimensionReduction() #visualize on other data set
     sample.VisualizeCluster()
