@@ -112,6 +112,7 @@ class CountBubble():
             temp.append(maxnum)
             T.append(temp)
         self.EnergyArray = np.matrix(T)
+        self.EnergyArray[self.EnergyArray == -np.inf] = 0
      
     def PrepareWPE(self, smoothlevel, windows, step, packetlevel):
         """Prepare the WPE from the audio data
@@ -153,6 +154,7 @@ class CountBubble():
                         }
         self.ManifoldModel = manifoldlist[model]
         self.ManifoldModel.fit(self.EnergyArray)
+        return self.ManifoldModel
     
     def ManifoldTransform(self):
         """using manifold learning to transform the high dimensional features to
@@ -178,7 +180,7 @@ class CountBubble():
             except:
                 pass
             
-        self.LabeledDF = np.concatenate((label, self.ManifoldTransformData), axis=1)
+        self.LabeledDF = np.concatenate((label, self.ManifoldTransformData()), axis=1)
         #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(LabeledDF[:,1:], LabeledDF[:,0], test_size=.4, random_state=0)
         self.X_train = LabeledDF[:LabeledDF.shape[0]/2,1:]
         self.X_train = LabeledDF[LabeledDF.shape[0]/2:,1:]
@@ -208,6 +210,7 @@ class CountBubble():
         
         self.clf =  ClassfiedList[model]
         self.clf.fit(self.X_train, self.y_train)
+        return self.clf
     
     def CrossValidation(self):
         """Cross validate the model in the sample which doesn't included in
@@ -247,6 +250,16 @@ class CountBubble():
                       'MiniBatch': cluster.MiniBatchKMeans(n_clusters=component)}
         MyCluster = clusterlist[model]
         return MyCluster.fit_predict(self.EnergyArray)
+    
+    def SupervisedPredicting(self, manifold, clf):
+        """A pipline to predict from raw data with the manofold model and
+        classify model trained before.
+        Parameters
+        ----------
+        manifold: model, manifold learning model.
+        clf: model, classify model
+        """
+        return clf.predict(manifold.transform(self.EnergyArray))
         
     """visualization part"""
     def VisualizeFrame(self,plt,minnum,maxnum,framelocation, color = 'r'):
