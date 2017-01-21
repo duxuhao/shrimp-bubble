@@ -7,6 +7,17 @@ import pywt
 import matplotlib.cm as cm
 import seaborn as sns
 from sklearn import cluster
+from sklearn.model_selection import train_test_split
+from sklearn.neural_network import MLPClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.gaussian_process.kernels import RBF
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.metrics import roc_auc_score
 
 
 class CountBubble():
@@ -147,7 +158,77 @@ class CountBubble():
         """using manifold learning to transform the high dimensional features to
         low dimension using the model trained in self.ManifoldTrain()
         """
-        return self.ManifoldModel.transform(self.EnergyArray)
+        self.ManifoldTransformData = self.ManifoldModel.transform(self.EnergyArray)
+        return self.ManifoldTransformData
+    
+    def PrepareLabelDataFrame(self, filename):
+        """Convert the shrimp appearance time into label and make the label and 
+        the origin frame into a dataframe.
+        Parameters
+        ----------
+        filename: the file that contain the shrimp appearance time
+        """
+        df = pd.read_csv(filename)
+        label = np.zeors(self.EnergyArray.shape[0])
+        df.time *= self.df.rate
+        for i in df.time:
+            try:
+                label[int(np.ceil(df.time/float(self.step))-1)] += 1
+                label[int(np.floor(df.time/float(self.step))-1)] += 1
+            except:
+                pass
+            
+        self.LabeledDF = np.concatenate((label, self.ManifoldTransformData), axis=1)
+        #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(LabeledDF[:,1:], LabeledDF[:,0], test_size=.4, random_state=0)
+        self.X_train = LabeledDF[:LabeledDF.shape[0]/2,1:]
+        self.X_train = LabeledDF[LabeledDF.shape[0]/2:,1:]
+        self.y_train = LabeledDF[:LabeledDF.shape[0]/2,0]
+        self.y_train = LabeledDF[LabeledDF.shape[0]/2:,0]
+    
+    def SupervisedTrain(self, model = 'GBRT'):
+        """choose the model and use it to train the labeled data.
+            1. Spectral Clustering
+            2. Agglomerative Clustering
+            3. MiniBatch KMeans
+        Parameters
+        ----------
+        model: string, the model you select for supervised learning
+        """
+        ClassfiedList = {"Nearest Neighbors": KNeighborsClassifier(3),
+                         "SVMLinear": SVC(kernel="linear", C=0.025),
+                         "SVMrbf": SVC(gamma=2, C=1),
+                         "Gaussian": GaussianProcessClassifier(1.0 * RBF(1.0), warm_start=True),
+                         "DT": DecisionTreeClassifier(max_depth=3, random_state=0),
+                         "RF": RandomForestClassifier(max_depth=3, n_estimators=10, max_features=1, random_state=0),
+                         "GBRT": GradientBoostingClassifier(random_state=0),
+                         "NeualNet": MLPClassifier(alpha=1, random_state=0),
+                         "Ada": AdaBoostClassifier(),
+                         "NB": GaussianNB(),
+                         "QDA": QuadraticDiscriminantAnalysis()}
+        
+        self.clf =  ClassfiedList[model]
+        self.clf.fit(self.X_train, self.y_train)
+    
+    def CrossValidation(self):
+        """Cross validate the model in the sample which doesn't included in
+        training
+        Parameters
+        ----------
+        component: 
+        """
+        self.PredictTrain = self.clf.predict_proba(self.X_train)
+        self.PredictTest = self.clf.predict_proba(self.X_test)
+        n = 33
+        print '-' * n
+        print '\t\t|\ttrain\t|\ttest\t|'
+        print '-' * n
+        print '\tAUC\t|\t'+ str(roc_auc_score(self.y_train, self.PredictTrain))+'\t|\t'+str(roc_auc_score(self.y_train, self.PredictTrain))+'\t|'
+        print '-' * n
+        print '\TPR\t|\t'+ str(np.sum(self.y_train * self.PredictTrain) / float(sum(self.y_train)))+'\t|\t'+str(np.sum(self.y_test * self.PredictTest) / float(sum(self.y_test)))+'\t|'
+        print '-' * n
+        plt.plot(self.y_test,'k')
+        plt.plot(self.PredictTest,'r')
+        plt.show()
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category
@@ -282,9 +363,46 @@ class CountBubble():
                 plt.close()
             else:
                 plt.show()
+        
+    def VisualizeSupervisedLearning(self, animation = 1, speed = 0.01):
+        """Visualize the result of supervised learning, if the frame color is green,
+        that means the prediction is correct. but if it is red, it means the prediction
+        is wrong. The frame and precision will be update in realtime
+        ----------
+        animation: bool, the switch of the figure presentation method. If it is
+        on, the frame will continue to move forward while if it is off, the figure
+        will present one by one manually.
+        speed: the speed to play the animation
+        """
+        alldata = self.data
+        loop = len(drawdata)
+        framelocation = 5
+        color = ['r','g','b']
+        count = np.array([0,0,0])
+        result = self.y_test - self.clf.predict(X_test) + 2
+        for index in range(framelocation,loop):
+            plt.figure(figsize=(16,8))
+            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
+            plt.plot(data, c = 'k')
+            minnum = min(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            maxnum = max(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
+            temp = result[index]
+            count[temp] += 1
+            self.VisualizeFrame(plt, minnum,maxnum,framelocation, color[temp])
+            plt.xlim([0,self.windows * 10])
+            plt.ylim([min(alldata),max(alldata)])
+            plt.title('Frame '+ str(index) + '/' + str(loop-1) + '\nresult count' + str(count[1]) + '\t' + str(count[0]) + '\t' + str(count[2]), fontsize=20)
+            if animation:
+                plt.ion()
+                plt.pause(speed)
+                plt.close()
+            else:
+                plt.show()
 
 if __name__ == "__main__":
     filename = 'B18h01m41s17jul2014y.wav'
+    filenamewithlabel = '.wav'
+    labelfile = '.csv'
     TrainStartTime = 3.0
     TrainEndTime = 3.5
     PredictStartTime = 3.5
@@ -298,8 +416,15 @@ if __name__ == "__main__":
     sample = CountBubble()
     sample.GetAudio(filename, PredictStartTime, PredictEndTime)
     sample.PrepareWPE(smoothlevel, windows, step, packetlevel)
-    #sample.ManifoldTrain(neibour, component)
-    #sample.GetAudio(filename, PredictStartTime, PredictEndTime)
+    sample.ManifoldTrain(neibour, component)
+    sample.GetAudio(filename, PredictStartTime, PredictEndTime)
+    sample.PrepareWPE(smoothlevel, windows, step, packetlevel)
+    sample.VisualizeDimensionReduction() #visualize on other data set
+    #sample.VisualizeCluster()
+    #sample.GetAudio(filenamewithlabel, PredictStartTime, PredictEndTime)
     #sample.PrepareWPE(smoothlevel, windows, step, packetlevel)
-    #sample.VisualizeDimensionReduction() #visualize on other data set
-    sample.VisualizeCluster()
+    #sample.ManifoldTransform(neibour, component)
+    #sample.PrepareLabelDataFrame(labelfile)
+    #sample.SupervisedTrain()
+    #sample.CrossValidation()
+    #sample.VisualizeSupervisedLearning()
