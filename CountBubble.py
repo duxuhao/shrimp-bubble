@@ -95,7 +95,6 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
-        self.Energe = np.zeros([len(self.cutclip), packlevel+1, 2**packlevel])
         T = []
         for clipindex in range(len(self.cutclip)):
             temp = []
@@ -103,16 +102,14 @@ class CountBubble():
             for i in xrange(packlevel+1):
                 for index, node in enumerate(wp.get_level(i)):
                     E = np.log(np.sqrt(np.sum(wp[node.path].data ** 2)))
-                    nodeLen = 2** (packlevel / (i+1))
                     temp.append(E)
-                    for count in xrange(nodeLen):
-                        self.Energe[clipindex, i, count+index*nodeLen] = E
             maxnum = float(max(temp))
             temp = list(np.array(temp) / float(max(temp))) # this function will deliminate the effect of the amplitude
             temp.append(maxnum)
             T.append(temp)
-        self.EnergyArray = np.matrix(T)
-        self.EnergyArray[self.EnergyArray == -np.inf] = 0
+        self.WPE = np.matrix(T)
+        self.WPE[self.WPE == -np.inf] = 0
+        self.Feature = self.WPE
      
     def PrepareWPE(self, smoothlevel, windows, step, packetlevel):
         """Prepare the WPE from the audio data
@@ -155,7 +152,7 @@ class CountBubble():
                        'tsne': manifold.TSNE(n_components=component, init='pca', random_state=0)
                         }
         self.ManifoldModel = manifoldlist[model]
-        self.ManifoldModel.fit(self.EnergyArray)
+        self.ManifoldModel.fit(self.Feature)
         print '-'*30 + 'Finish training the manifold learning' + '-'*30
         return self.ManifoldModel
     
@@ -163,7 +160,7 @@ class CountBubble():
         """using manifold learning to transform the high dimensional features to
         low dimension using the model trained in self.ManifoldTrain()
         """
-        self.ManifoldTransformData = self.ManifoldModel.transform(self.EnergyArray)
+        self.ManifoldTransformData = self.ManifoldModel.transform(self.Feature)
         return self.ManifoldTransformData
     
     def PrepareLabelDataFrame(self, filename):
@@ -174,7 +171,7 @@ class CountBubble():
         filename: the file that contain the shrimp appearance time
         """
         df = pd.read_csv(filename)
-        label = np.zeors(self.EnergyArray.shape[0])
+        label = np.zeors(self.Feature.shape[0])
         df.time *= self.df.rate
         for i in df.time:
             try:
@@ -252,9 +249,9 @@ class CountBubble():
                       'Agglomerative': cluster.AgglomerativeClustering(n_clusters=component, linkage='ward'), #nice
                       'MiniBatch': cluster.MiniBatchKMeans(n_clusters=component)}
         MyCluster = clusterlist[model]
-        return MyCluster.fit_predict(self.EnergyArray)
+        return MyCluster.fit_predict(self.Feature)
     
-    def SupervisedPredicting(self, manifold, clf):
+    def SupervisedPredicting(self, preprocess1, clf):
         """A pipline to predict from raw data with the manofold model and
         classify model trained before.
         Parameters
@@ -262,7 +259,7 @@ class CountBubble():
         manifold: model, manifold learning model.
         clf: model, classify model
         """
-        return clf.predict(manifold.transform(self.EnergyArray))
+        return clf.predict(preprocess1.transform(self.Feature))
         
     """visualization part"""
     def VisualizeFrame(self,plt,minnum,maxnum,framelocation, color = 'r'):
@@ -297,6 +294,16 @@ class CountBubble():
         """Visualize the WPE matrix and the corresponding rime sequence signal
         at the same time.
         """
+        dimen = self.WPE.shape
+        packlevel = int(np.sqrt(dimen[1]))
+        Energymatrix = np.zeros([len(self.WPE), packlevel+1, 2**packlevel])
+        for clipindex in xrange(dimen[0]):
+            for i in xrange(dimen[0]-1):
+                nodeLen = 2** (packlevel / (i+1))
+                level = int(np.floor(np.log2(i+1)))
+                index = i - (2 ** level - 1)
+                for count in xrange(nodeLen):
+                    Energymatrix[clipindex, level, count+index*nodeLen] = self.WPE[clipindex, i] * self.WPE[clipindex, -1]
         alldata = self.data
         maxnum = max(alldata)
         minnum = min(alldata)
@@ -309,7 +316,7 @@ class CountBubble():
             plt.plot(np.array([self.windows,self.windows]) * n,[-20000,20000],c = 'r')
             plt.ylim([maxnum,minnum])
             plt.subplot(122)
-            plt.imshow(self.Energe[clipindex,:,:], cmap=cm.jet)
+            plt.imshow(Energymatrix[clipindex,:,:], cmap=cm.jet)
             ax = plt.gca()
             ax.set_aspect('auto')
             plt.colorbar()
@@ -349,7 +356,7 @@ class CountBubble():
             else:
                 plt.show()
     
-    def VisualizeCluster(self, animation = 1, speed = 0.01):
+    def VisualizeCluster(self, component = 2, animation = 1, speed = 0.01):
         """Visualize the cluster result of the data. Different categories will be
         present by different frame colors.
         ----------
@@ -358,7 +365,7 @@ class CountBubble():
         will present one by one manually.
         speed: the speed to play the animation
         """
-        drawdata = self.ClusterTrain()
+        drawdata = self.ClusterTrain(component)
         alldata = self.data
         loop = len(drawdata)
         framelocation = 5
