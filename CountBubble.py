@@ -220,6 +220,7 @@ class CountBubble():
         """
         self.PredictTrain = self.clf.predict_proba(self.X_train)[:,1]
         self.PredictTest = self.clf.predict_proba(self.X_test)[:,1]
+        print self.PredictTest
         n = 49
         print '-' * n
         print '\t\t|\ttrain\t|\ttest\t|'
@@ -228,10 +229,12 @@ class CountBubble():
         print '-' * n
         print '\tTPR\t|\t'+ str(np.round(np.sum(self.y_train * self.PredictTrain) / float(sum(self.y_train)),3))+'\t|\t'+str(np.round(np.sum(self.y_test * self.PredictTest) / float(sum(self.y_test)),3))+'\t|'
         print '-' * n
+        '''
         plt.plot(self.y_test,'k')
         plt.plot(self.PredictTest,'r')
         plt.ylim([-0.1,1.1])
         plt.show()
+        '''
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category

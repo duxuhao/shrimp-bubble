@@ -29,7 +29,6 @@ def PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, pr
     new = GetAudioWPE(new, newfile, start, end, smoothlevel, windows, step, packetlevel)
     return new.SupervisedPredicting(preprocess, clf)
 
-
 warnings.filterwarnings("ignore")
 filename = 'B18h01m41s17jul2014y.wav'
 filenamewithlabel = 'B17h23m35s25apr2012y.wav'
