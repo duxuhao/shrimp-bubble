@@ -1,11 +1,11 @@
 import wavio
-import matplotlib.pyplot as plt
 import numpy as np
-from sklearn import manifold
 import pandas as pd
 import pywt
+import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import seaborn as sns
+from sklearn import manifold
 from sklearn import cluster
 from sklearn.model_selection import train_test_split
 from sklearn.neural_network import MLPClassifier
@@ -50,22 +50,6 @@ class CountBubble():
         self.smoothdata = self.data[windowlength:] / float(windowlength+1)
         for i in range(windowlength):
             self.smoothdata = self.smoothdata + self.data[i:i-windowlength] / float(windowlength+1)
-        
-    def ThresholdMethod(self, threshold = 7000):
-        """The simplest method for counting the shrimp with the determination
-        of the threshold. Fast but not accurate
-        Parameters
-        ----------
-        threshold: float, threshold we used, variated in different dataset and
-        need to be determined manually.
-        """
-        a = self.smoothdata > threshold
-        a = a.astype(int)
-        identify = (a[1:]-a[:-1]) == 1
-        print '-'*40
-        print "{0} bubbles appear from {1} s to {2} s, from threshold method".format(np.ceil(sum(identify)[0] / 2.0), self.start, self.end)
-        print '-'*40
-        return identify
     
     def CutwithWindows(self, windows, step):
         """cut the smooth audio signal into different frame for processing with
@@ -85,6 +69,22 @@ class CountBubble():
             self.cutclip = pd.DataFrame(T)
         except:
             print 'Smooth data need to be done first.'
+        
+    def ThresholdMethod(self, threshold = 7000):
+        """The simplest method for counting the shrimp with the determination
+        of the threshold. Fast but not accurate
+        Parameters
+        ----------
+        threshold: float, threshold we used, variated in different dataset and
+        need to be determined manually.
+        """
+        a = self.smoothdata > threshold
+        a = a.astype(int)
+        identify = (a[1:]-a[:-1]) == 1
+        print '-'*40
+        print "{0} bubbles appear from {1} s to {2} s, from threshold method".format(np.ceil(sum(identify)[0] / 2.0), self.start, self.end)
+        print '-'*40
+        return identify
     
     def waveletPacket(self, packlevel):
         """After obtaining the frame, the Wavelet Packet Energy (WPE) feature 
@@ -96,7 +96,7 @@ class CountBubble():
         2^ packlevel must smaller than the frame data.
         """
         T = []
-        for clipindex in range(len(self.cutclip)):
+        for clipindex in xrange(len(self.cutclip)):
             temp = []
             wp= pywt.WaveletPacket(data=self.cutclip.ix[clipindex,:],wavelet='db1',mode='symmetric',  maxlevel = packlevel)
             for i in xrange(packlevel+1):
@@ -123,11 +123,11 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
-        print '-'*30 + 'Preparing the WPE' + '-'*30
+        print '-'*49 + '\n\tPreparing the WPE\n' + '-'*49
         self.smooth(smoothlevel)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
-        print '-'*30 + 'Finish preparing the WPE' + '-'*30
+        print '-'*49 + '\n\tFinish preparing the WPE\n' + '-'*49
         
     def ManifoldTrain(self, neibour = 30, component = 2,  model = 'LLE'):
         """Transfer the high dimension WPE to lower dimension using the manifold
@@ -143,7 +143,7 @@ class CountBubble():
         component: int, the dimension that convert to.
         model: string, the model you select for manifold learning
         """
-        print '-'*30 + 'Training the manifold learning' + '-'*30
+        print '-'*49 + '\n\tTraining the manifold learning\n' + '-'*49
         manifoldlist = {'LLE': manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0), 
                         'Spectral': manifold.SpectralEmbedding(n_components=component,
                                 n_neighbors=neibour,random_state=0),
@@ -153,7 +153,7 @@ class CountBubble():
                         }
         self.ManifoldModel = manifoldlist[model]
         self.ManifoldModel.fit(self.Feature)
-        print '-'*30 + 'Finish training the manifold learning' + '-'*30
+        print '-'*49 + '\n\tFinish training the manifold learning\n' + '-'*49
         return self.ManifoldModel
     
     def ManifoldTransform(self):
@@ -171,21 +171,21 @@ class CountBubble():
         filename: the file that contain the shrimp appearance time
         """
         df = pd.read_csv(filename)
-        label = np.zeors(self.Feature.shape[0])
-        df.time *= self.df.rate
-        for i in df.time:
+        label = np.zeros((1,self.Feature.shape[0]))
+        #df.time *= self.df.rate
+        for i in df.Time:
             try:
-                label[int(np.ceil(df.time/float(self.step))-1)] += 1
-                label[int(np.floor(df.time/float(self.step))-1)] += 1
+                label[0][int(np.ceil(i/float(self.step))-1)] += 1
+                label[0][int(np.floor(i/float(self.step))-1)] += 1
             except:
                 pass
-            
-        self.LabeledDF = np.concatenate((label, self.ManifoldTransformData()), axis=1)
+        self.LabeledDF = np.concatenate((label.T, self.ManifoldTransformData), axis=1)
         #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(LabeledDF[:,1:], LabeledDF[:,0], test_size=.4, random_state=0)
-        self.X_train = LabeledDF[:LabeledDF.shape[0]/2,1:]
-        self.X_train = LabeledDF[LabeledDF.shape[0]/2:,1:]
-        self.y_train = LabeledDF[:LabeledDF.shape[0]/2,0]
-        self.y_train = LabeledDF[LabeledDF.shape[0]/2:,0]
+        s = self.LabeledDF.shape[0]
+        self.X_train = self.LabeledDF[:s/2,1:]
+        self.X_test = self.LabeledDF[s/2:,1:]
+        self.y_train = self.LabeledDF[:s/2,0]
+        self.y_test = self.LabeledDF[s/2:,0]
     
     def SupervisedTrain(self, model = 'GBRT'):
         """choose the model and use it to train the labeled data.
@@ -207,7 +207,6 @@ class CountBubble():
                          "Ada": AdaBoostClassifier(),
                          "NB": GaussianNB(),
                          "QDA": QuadraticDiscriminantAnalysis()}
-        
         self.clf =  ClassfiedList[model]
         self.clf.fit(self.X_train, self.y_train)
         return self.clf
@@ -219,18 +218,19 @@ class CountBubble():
         ----------
         component: 
         """
-        self.PredictTrain = self.clf.predict_proba(self.X_train)
-        self.PredictTest = self.clf.predict_proba(self.X_test)
-        n = 33
+        self.PredictTrain = self.clf.predict_proba(self.X_train)[:,1]
+        self.PredictTest = self.clf.predict_proba(self.X_test)[:,1]
+        n = 49
         print '-' * n
         print '\t\t|\ttrain\t|\ttest\t|'
         print '-' * n
-        print '\tAUC\t|\t'+ str(roc_auc_score(self.y_train, self.PredictTrain))+'\t|\t'+str(roc_auc_score(self.y_train, self.PredictTrain))+'\t|'
+        print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T, self.PredictTrain),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTest),3))+'\t|'
         print '-' * n
-        print '\TPR\t|\t'+ str(np.sum(self.y_train * self.PredictTrain) / float(sum(self.y_train)))+'\t|\t'+str(np.sum(self.y_test * self.PredictTest) / float(sum(self.y_test)))+'\t|'
+        print '\tTPR\t|\t'+ str(np.round(np.sum(self.y_train * self.PredictTrain) / float(sum(self.y_train)),3))+'\t|\t'+str(np.round(np.sum(self.y_test * self.PredictTest) / float(sum(self.y_test)),3))+'\t|'
         print '-' * n
         plt.plot(self.y_test,'k')
         plt.plot(self.PredictTest,'r')
+        plt.ylim([-0.1,1.1])
         plt.show()
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
@@ -244,7 +244,7 @@ class CountBubble():
         component: int, the dimension that convert to.
         model: string, the model you select for manifold learning
         """
-        print '-'*30 + 'Clustering' + '-'*30
+        print '-'*49 + '\n' +'Clustering\n' + '-'*49
         clusterlist = {'spectral': cluster.SpectralClustering(n_clusters=component,eigen_solver='arpack',affinity="nearest_neighbors", random_state=0),
                       'Agglomerative': cluster.AgglomerativeClustering(n_clusters=component, linkage='ward'), #nice
                       'MiniBatch': cluster.MiniBatchKMeans(n_clusters=component)}
@@ -262,6 +262,26 @@ class CountBubble():
         return clf.predict(preprocess1.transform(self.Feature))
         
     """visualization part"""
+    def VisualizeTime(self):
+        """Have a brief view on the data"""
+        plt.plot(self.data)
+        plt.show()
+        
+    def VisualizationPresent(self, plt, animation, speed):
+        """Present the figure plot before
+        Parameters
+        ----------
+        plt: figure, the plot figure.
+        animation: int, present in animation or statics.
+        speed: float, the animination speed
+        """
+        if animation:
+            plt.ion()
+            plt.pause(speed)
+            plt.close()
+        else:
+            plt.show()
+    
     def VisualizeFrame(self,plt,minnum,maxnum,framelocation, color = 'r'):
         """Plot a frame on the signal with a window length
         Parameters
@@ -308,7 +328,7 @@ class CountBubble():
         maxnum = max(alldata)
         minnum = min(alldata)
         n = 3
-        for clipindex in range(n,10):
+        for clipindex in xrange(n,10):
             plt.figure(figsize=(16,8))
             plt.subplot(121)
             plt.plot(alldata[self.windows*(clipindex-n+1):self.windows*(clipindex+10)])
@@ -334,27 +354,23 @@ class CountBubble():
         drawdata = self.ManifoldTransform()
         alldata = self.data
         loop = len(drawdata)
-        framelocation = 2
-        for index in range(framelocation,loop):
+        framelocation = 3
+        leng = 6
+        for index in xrange(framelocation,loop):
             plt.figure(figsize=(16,8))
             plt.subplot(121)
             plt.scatter(drawdata[:,0],drawdata[:,1], c = 'k')
             plt.scatter(drawdata[index,0],drawdata[index,1],c = 'r', s = 120)
             plt.subplot(122)
-            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
+            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*leng)]
             plt.plot(data, c = 'k')
             minnum = min(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
             maxnum = max(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
             self.VisualizeFrame(plt,minnum,maxnum,framelocation)
-            plt.xlim([0,self.windows * 10])
+            plt.xlim([0,self.windows * leng])
             plt.ylim([min(alldata),max(alldata)])
             plt.suptitle('Frame '+ str(index) + '/' + str(loop-1), fontsize=24)
-            if animation:
-                plt.ion()
-                plt.pause(speed)
-                plt.close()
-            else:
-                plt.show()
+            self.VisualizationPresent(plt, animation, speed)
     
     def VisualizeCluster(self, component = 2, animation = 1, speed = 0.01):
         """Visualize the cluster result of the data. Different categories will be
@@ -369,23 +385,19 @@ class CountBubble():
         alldata = self.data
         loop = len(drawdata)
         framelocation = 5
+        leng = 6
         color = ['r','b','g','y','c','m']
-        for index in range(framelocation,loop):
+        for index in xrange(framelocation,loop):
             plt.figure(figsize=(16,8))
-            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
+            data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*leng)]
             plt.plot(data, c = 'k')
             minnum = min(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
             maxnum = max(alldata[self.step*(index):(self.step*index+self.windows)])*1.1
             self.VisualizeFrame(plt, minnum,maxnum,framelocation, color[drawdata[index]])
-            plt.xlim([0,self.windows * 10])
+            plt.xlim([0,self.windows * leng])
             plt.ylim([min(alldata),max(alldata)])
             plt.title('Frame '+ str(index) + '/' + str(loop-1), fontsize=24)
-            if animation:
-                plt.ion()
-                plt.pause(speed)
-                plt.close()
-            else:
-                plt.show()
+            self.VisualizationPresent(plt, animation, speed)
         
     def VisualizeSupervisedLearning(self, animation = 1, speed = 0.01):
         """Visualize the result of supervised learning, if the frame color is green,
@@ -403,7 +415,7 @@ class CountBubble():
         color = ['r','g','b']
         count = np.array([0,0,0])
         result = self.y_test - self.clf.predict(X_test) + 2
-        for index in range(framelocation,loop):
+        for index in xrange(framelocation,loop):
             plt.figure(figsize=(16,8))
             data = alldata[self.step*(index-framelocation):(self.step*(index-framelocation)+self.windows*10)]
             plt.plot(data, c = 'k')
@@ -415,9 +427,4 @@ class CountBubble():
             plt.xlim([0,self.windows * 10])
             plt.ylim([min(alldata),max(alldata)])
             plt.title('Frame '+ str(index) + '/' + str(loop-1) + '\nresult count' + str(count[1]) + '\t' + str(count[0]) + '\t' + str(count[2]), fontsize=20)
-            if animation:
-                plt.ion()
-                plt.pause(speed)
-                plt.close()
-            else:
-                plt.show()
+            self.VisualizationPresent(plt, animation, speed)
