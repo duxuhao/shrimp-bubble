@@ -1,0 +1,363 @@
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	2
+max_depth:	1	0.821
+max_depth:	2	0.833
+max_depth:	3	0.798
+max_depth:	4	0.81
+max_depth:	5	0.81
+max_depth:	6	0.798
+max_depth:	7	0.821
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	3
+max_depth:	1	0.821
+max_depth:	2	0.833
+max_depth:	3	0.81
+max_depth:	4	0.798
+max_depth:	5	0.81
+max_depth:	6	0.798
+max_depth:	7	0.821
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	4
+max_depth:	1	0.821
+max_depth:	2	0.833
+max_depth:	3	0.821
+max_depth:	4	0.798
+max_depth:	5	0.786
+max_depth:	6	0.786
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	5
+max_depth:	1	0.798
+max_depth:	2	0.845
+max_depth:	3	0.833
+max_depth:	4	0.798
+max_depth:	5	0.786
+max_depth:	6	0.786
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	6
+max_depth:	1	0.798
+max_depth:	2	0.81
+max_depth:	3	0.798
+max_depth:	4	0.798
+max_depth:	5	0.798
+max_depth:	6	0.786
+max_depth:	7	0.762
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	7
+max_depth:	1	0.786
+max_depth:	2	0.81
+max_depth:	3	0.774
+max_depth:	4	0.75
+max_depth:	5	0.762
+max_depth:	6	0.774
+max_depth:	7	0.774
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	8
+max_depth:	1	0.798
+max_depth:	2	0.81
+max_depth:	3	0.762
+max_depth:	4	0.774
+max_depth:	5	0.798
+max_depth:	6	0.786
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	9
+max_depth:	1	0.75
+max_depth:	2	0.786
+max_depth:	3	0.774
+max_depth:	4	0.75
+max_depth:	5	0.762
+max_depth:	6	0.738
+max_depth:	7	0.762
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	2
+max_depth:	1	0.821
+max_depth:	2	0.81
+max_depth:	3	0.798
+max_depth:	4	0.798
+max_depth:	5	0.798
+max_depth:	6	0.81
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	3
+max_depth:	1	0.833
+max_depth:	2	0.833
+max_depth:	3	0.774
+max_depth:	4	0.762
+max_depth:	5	0.774
+max_depth:	6	0.786
+max_depth:	7	0.774
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	4
+max_depth:	1	0.833
+max_depth:	2	0.821
+max_depth:	3	0.762
+max_depth:	4	0.774
+max_depth:	5	0.75
+max_depth:	6	0.714
+max_depth:	7	0.75
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	5
+max_depth:	1	0.81
+max_depth:	2	0.738
+max_depth:	3	0.726
+max_depth:	4	0.738
+max_depth:	5	0.738
+max_depth:	6	0.69
+max_depth:	7	0.726
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	6
+max_depth:	1	0.798
+max_depth:	2	0.762
+max_depth:	3	0.726
+max_depth:	4	0.714
+max_depth:	5	0.714
+max_depth:	6	0.714
+max_depth:	7	0.702
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	7
+max_depth:	1	0.798
+max_depth:	2	0.786
+max_depth:	3	0.702
+max_depth:	4	0.69
+max_depth:	5	0.702
+max_depth:	6	0.714
+max_depth:	7	0.702
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	8
+max_depth:	1	0.762
+max_depth:	2	0.786
+max_depth:	3	0.726
+max_depth:	4	0.75
+max_depth:	5	0.738
+max_depth:	6	0.75
+max_depth:	7	0.738
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	12	Component	9
+max_depth:	1	0.798
+max_depth:	2	0.81
+max_depth:	3	0.798
+max_depth:	4	0.798
+max_depth:	5	0.81
+max_depth:	6	0.774
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	2
+max_depth:	1	0.81
+max_depth:	2	0.786
+max_depth:	3	0.726
+max_depth:	4	0.75
+max_depth:	5	0.75
+max_depth:	6	0.738
+max_depth:	7	0.75
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	3
+max_depth:	1	0.774
+max_depth:	2	0.774
+max_depth:	3	0.762
+max_depth:	4	0.762
+max_depth:	5	0.762
+max_depth:	6	0.762
+max_depth:	7	0.762
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	4
+max_depth:	1	0.774
+max_depth:	2	0.798
+max_depth:	3	0.798
+max_depth:	4	0.762
+max_depth:	5	0.774
+max_depth:	6	0.762
+max_depth:	7	0.75
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	5
+max_depth:	1	0.798
+max_depth:	2	0.798
+max_depth:	3	0.774
+max_depth:	4	0.762
+max_depth:	5	0.762
+max_depth:	6	0.774
+max_depth:	7	0.774
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	6
+max_depth:	1	0.798
+max_depth:	2	0.786
+max_depth:	3	0.798
+max_depth:	4	0.75
+max_depth:	5	0.762
+max_depth:	6	0.762
+max_depth:	7	0.762
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	7
+max_depth:	1	0.798
+max_depth:	2	0.81
+max_depth:	3	0.786
+max_depth:	4	0.786
+max_depth:	5	0.798
+max_depth:	6	0.81
+max_depth:	7	0.81
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	8
+max_depth:	1	0.786
+max_depth:	2	0.786
+max_depth:	3	0.81
+max_depth:	4	0.81
+max_depth:	5	0.786
+max_depth:	6	0.798
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	14	Component	9
+max_depth:	1	0.798
+max_depth:	2	0.833
+max_depth:	3	0.786
+max_depth:	4	0.798
+max_depth:	5	0.774
+max_depth:	6	0.774
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	2
+max_depth:	1	0.798
+max_depth:	2	0.786
+max_depth:	3	0.81
+max_depth:	4	0.821
+max_depth:	5	0.798
+max_depth:	6	0.774
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	3
+max_depth:	1	0.798
+max_depth:	2	0.786
+max_depth:	3	0.798
+max_depth:	4	0.821
+max_depth:	5	0.798
+max_depth:	6	0.786
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	4
+max_depth:	1	0.821
+max_depth:	2	0.821
+max_depth:	3	0.81
+max_depth:	4	0.81
+max_depth:	5	0.821
+max_depth:	6	0.798
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	5
+max_depth:	1	0.833
+max_depth:	2	0.821
+max_depth:	3	0.821
+max_depth:	4	0.798
+max_depth:	5	0.786
+max_depth:	6	0.798
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	6
+max_depth:	1	0.0
+max_depth:	2	0.81
+max_depth:	3	0.81
+max_depth:	4	0.798
+max_depth:	5	0.798
+max_depth:	6	0.798
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	7
+max_depth:	1	0.0
+max_depth:	2	0.81
+max_depth:	3	0.81
+max_depth:	4	0.821
+max_depth:	5	0.81
+max_depth:	6	0.798
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	8
+max_depth:	1	0.0
+max_depth:	2	0.833
+max_depth:	3	0.833
+max_depth:	4	0.833
+max_depth:	5	0.81
+max_depth:	6	0.821
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	16	Component	9
+max_depth:	1	0.81
+max_depth:	2	0.845
+max_depth:	3	0.821
+max_depth:	4	0.81
+max_depth:	5	0.798
+max_depth:	6	0.786
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	2
+max_depth:	1	0.786
+max_depth:	2	0.798
+max_depth:	3	0.821
+max_depth:	4	0.821
+max_depth:	5	0.821
+max_depth:	6	0.81
+max_depth:	7	0.821
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	3
+max_depth:	1	0.798
+max_depth:	2	0.774
+max_depth:	3	0.798
+max_depth:	4	0.786
+max_depth:	5	0.774
+max_depth:	6	0.81
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	4
+max_depth:	1	0.81
+max_depth:	2	0.798
+max_depth:	3	0.774
+max_depth:	4	0.798
+max_depth:	5	0.798
+max_depth:	6	0.821
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	5
+max_depth:	1	0.81
+max_depth:	2	0.786
+max_depth:	3	0.774
+max_depth:	4	0.774
+max_depth:	5	0.774
+max_depth:	6	0.798
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	6
+max_depth:	1	0.798
+max_depth:	2	0.774
+max_depth:	3	0.774
+max_depth:	4	0.786
+max_depth:	5	0.774
+max_depth:	6	0.786
+max_depth:	7	0.774
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	7
+max_depth:	1	0.81
+max_depth:	2	0.798
+max_depth:	3	0.798
+max_depth:	4	0.798
+max_depth:	5	0.786
+max_depth:	6	0.833
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	8
+max_depth:	1	0.821
+max_depth:	2	0.786
+max_depth:	3	0.798
+max_depth:	4	0.798
+max_depth:	5	0.774
+max_depth:	6	0.81
+max_depth:	7	0.798
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	18	Component	9
+max_depth:	1	0.798
+max_depth:	2	0.774
+max_depth:	3	0.774
+max_depth:	4	0.786
+max_depth:	5	0.786
+max_depth:	6	0.786
+max_depth:	7	0.786
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	2
+max_depth:	1	0.786

@@ -2,6 +2,7 @@ import CountBubble as CB
 import warnings
 import numpy as np
 from multiprocessing import Pool
+from sklearn import manifold
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
@@ -42,8 +43,6 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     log.write('-'*70)
     log.write('\n')
     log.close()
-    #bc.VisualizeManifoldwithLabel()
-    #bc.VisualizeSupervisedLearning()
     return clf
 
 def PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, preprocess, clf):
@@ -53,6 +52,7 @@ def PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, pr
 
 warnings.filterwarnings("ignore")
 pool = Pool(4)
+
 ClassfiedList = {"Nearest Neighbors": KNeighborsClassifier(3),
                  "SVMLinear": SVC(kernel="linear", C=0.025),
                  "SVMrbf": SVC(gamma=2, C=1),
@@ -81,8 +81,6 @@ filenamewithlabel = 'B17h23m35s25apr2012y.wav'
 labelfile = 'B17_Peak_Analysis.csv'
 TrainStartTime = 0.0
 TrainEndTime = 40.0
-PredictStartTime = 0.0
-PredictEndTime = 125.0
 ClfStartTime = 0.0
 ClfEndTime = 146.0
 smoothlevel = 3
@@ -99,26 +97,15 @@ for packetlevel in np.arange(3, 11):
     TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
     ClssifySnappingShrimp = CB.CountBubble()
     ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-    for neibour in np.arange(10, 20, 2): # this one looks good
+    for neibour in np.arange(10, 20, 2):
         for component in np.arange(2, 10):
             log = open(logfilename,'a')
             record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
             log.write(record)
             log.close()
             print record
-            maniWPE = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
-            maniWPF = maniWPE
-            manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, maniWPE)
-            manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, maniWPF)
+            manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
+            manifoldWPFlatnessModel = manifoldWPEnergyModel
+            manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
+            manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
             clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
-
-'''
-#SnappingShrimp.GetAudio(filenamewithlabel, PredictStartTime, PredictEndTime)
-#SnappingShrimp.VisualizeTime()
-SnappingShrimp = GetAudioWPE(SnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
-manifold = SnappingShrimp.ManifoldTrain(neibour, component)
-#VisualizeManifold(SnappingShrimp, filenamewithlabel, PredictStartTime, PredictEndTime, smoothlevel, windows, step, packetlevel)
-clf = TrainClaasifier(SnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel, labelfile,clf)
-#prediction = PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, manifold, clf)
-#SnappingShrimp.VisualizeCluster(2)
-'''

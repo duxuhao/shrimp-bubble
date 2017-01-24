@@ -5,18 +5,8 @@ import pywt
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import seaborn as sns
-from sklearn import manifold
 from sklearn import cluster
-from sklearn.model_selection import train_test_split
-from sklearn.neural_network import MLPClassifier
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.gaussian_process.kernels import RBF
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.cross_validation import train_test_split
 from sklearn.metrics import roc_auc_score
 
 
@@ -66,7 +56,8 @@ class CountBubble():
         try:
             for i in xrange(len(self.smoothdata) / self.step - 1):
                 T.append(self.smoothdata[i*self.step:(i*self.step + self.windows)].T.tolist()[0])
-            self.cutclip = pd.DataFrame(T)
+            self.cutclip = np.array(T)
+            self.Feature = np.zeros(self.cutclip.shape[0]).reshape([-1,1])
         except:
             print 'Smooth data need to be done first.'
         
@@ -86,6 +77,15 @@ class CountBubble():
         print '-'*40
         return identify
     
+    def checkmatrix(self, df):
+        """Convert the unusable data to 0
+        """
+        df[df == np.inf] = 0
+        df[df == -np.inf] = 0
+        df[df == np.nan] = 0
+        df[df == -np.nan] = 0
+        return df
+
     def waveletPacket(self, packlevel):
         """After obtaining the frame, the Wavelet Packet Energy (WPE) feature 
         is obtain from the frame using the Wavelet Packe method.
@@ -95,24 +95,33 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
-        T = []
+        Energy = []
+        Flatness = []
+        self.maxWPE = []
         for clipindex in xrange(len(self.cutclip)):
-            temp = []
-            wp= pywt.WaveletPacket(data=self.cutclip.ix[clipindex,:],wavelet='db1',mode='symmetric',  maxlevel = packlevel)
+            tempE = []
+            tempF = []
+            wp= pywt.WaveletPacket(data=self.cutclip[clipindex,:],wavelet='db1',mode='symmetric',  maxlevel = packlevel)
             for i in xrange(packlevel+1):
                 for index, node in enumerate(wp.get_level(i)):
-                    E = np.log(np.sqrt(np.sum(wp[node.path].data ** 2)))
-                    temp.append(E)
-            maxnum = float(max(temp))
-            temp = list(np.array(temp) / float(max(temp))) # this function will deliminate the effect of the amplitude
-            temp.append(maxnum)
-            T.append(temp)
-        self.WPE = np.matrix(T)
-        self.WPE[self.WPE == -np.inf] = 0
-        self.Feature = self.WPE
+                    d = wp[node.path].data
+                    E = np.log(np.sqrt(np.sum(d ** 2)))
+                    F = np.exp(np.mean(np.log(np.abs(d)))) / np.mean(np.abs(d))
+                    tempE.append(E)
+                    tempF.append(F)
+            maxnumE = float(max(tempE))
+            temp = list(np.array(tempE) / maxnumE) # this function will deliminate the effect of the amplitude
+            self.maxWPE.append(maxnumE)
+            Energy.append(tempE)
+            Flatness.append(tempF)
+        self.maxWPE = np.array(self.maxWPE)
+        self.WPE = np.matrix(Energy)
+        self.WPE = self.checkmatrix(self.WPE)
+        self.WPF = np.matrix(Flatness)
+        self.WPF = self.checkmatrix(self.WPF)
      
-    def PrepareWPE(self, smoothlevel, windows, step, packetlevel):
-        """Prepare the WPE from the audio data
+    def PrepareWP(self, smoothlevel, windows, step, packetlevel):
+        """Prepare the WP from the audio data
         Parameters
         ----------
         smoothlevel: int, the length to average.
@@ -123,46 +132,80 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
-        print '-'*49 + '\n\tPreparing the WPE\n' + '-'*49
+        print '-'*49 + '\n\tPreparing the WP\n' + '-'*49
         self.smooth(smoothlevel)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
-        print '-'*49 + '\n\tFinish preparing the WPE\n' + '-'*49
+        print '-'*49 + '\n\tFinish preparing the WP\n' + '-'*49
         
-    def ManifoldTrain(self, neibour = 30, component = 2,  model = 'LLE'):
+    def ManifoldTrain(self, df, manimodel):
         """Transfer the high dimension WPE to lower dimension using the manifold
-        learning. Different methods of manifold learning can be selected as:
-            1. Locally Linear Embedding; 
-            2. Spectral Embedding; 
-            3. Isomap; 
-            4. MDS; 
-            5. TSNE.
+        learning. Different methods of manifold learning can be selected,
         Parameters
         ----------
-        neibour: int, the quantity of distance used calculated samples.
-        component: int, the dimension that convert to.
-        model: string, the model you select for manifold learning
+        df: matrix, the manifold target matrix
+        model: manifold model, the model you select for manifold learning
+        return the manifold model
         """
         print '-'*49 + '\n\tTraining the manifold learning\n' + '-'*49
-        manifoldlist = {'LLE': manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0), 
-                        'Spectral': manifold.SpectralEmbedding(n_components=component,
-                                n_neighbors=neibour,random_state=0),
-                       'Iso': manifold.Isomap(n_neighbors = neibour, n_components=component),
-                       'MDS': manifold.MDS(n_components=component, max_iter=100),
-                       'tsne': manifold.TSNE(n_components=component, init='pca', random_state=0)
-                        }
-        self.ManifoldModel = manifoldlist[model]
-        self.ManifoldModel.fit(self.Feature)
+        self.ManifoldModel = manimodel
+        self.ManifoldModel.fit(df)
         print '-'*49 + '\n\tFinish training the manifold learning\n' + '-'*49
         return self.ManifoldModel
     
-    def ManifoldTransform(self):
+    def ResetFeature(self):
+        """For looping, the feature need to be reset as it store in the 
+        class
+        """
+        self.Feature = self.Feature[:,:1]
+
+    def AddManifoldTransform(self, df, manifold = 0):
         """using manifold learning to transform the high dimensional features to
         low dimension using the model trained in self.ManifoldTrain()
+        Parameters
+        ----------
+        manifold: model, the train manofold model.
         """
-        self.ManifoldTransformData = self.ManifoldModel.transform(self.Feature)
+        if manifold == 0:
+            self.ManifoldTransformData = self.ManifoldModel.transform(df)
+        else:
+            self.ManifoldTransformData = manifold.transform(df)
+        self.Feature = np.concatenate((self.Feature, self.ManifoldTransformData), axis=1)
         return self.ManifoldTransformData
-    
+
+    def AddWPEMax(self):
+        """The largest value in WPE
+        """
+        new = self.maxWPE
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
+    def AddPeakEnergyRatio(self):
+        """The ratio of the peak value and the mean energy. For shrimp, the value
+        should be relatively large
+        """
+        new = np.max(self.cutclip,axis = 1) / np.sum(np.abs(self.cutclip),axis = 1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
+    def AddMeanDeltaT(self):
+        """The mean value of the delta T, which is the time signal all above 0 or
+        below zero. For shrimp, the value should be relatively small
+        """
+        new = np.zeros(self.Feature.shape[0])
+        for i in range(self.Feature.shape[0] - 1):
+            new += (self.cutclip[:,i] * self.cutclip[:,i+1] < 0)
+        new /= (self.windows-1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
+    def AddFlatness(self):
+        """The Flatness of the signal.
+        """
+        new = np.exp(np.mean(np.log(np.abs(self.cutclip)),axis=1)) / np.mean(np.abs(self.cutclip),axis=1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
     def PrepareLabelDataFrame(self, filename):
         """Convert the shrimp appearance time into label and make the label and 
         the origin frame into a dataframe.
@@ -175,40 +218,27 @@ class CountBubble():
         #df.time *= self.df.rate
         for i in df.Time:
             try:
-                label[0][int(np.ceil(i/float(self.step))-1)] += 1
-                label[0][int(np.floor(i/float(self.step))-1)] += 1
+                label[0][int(np.ceil(i/float(self.step))-1)] = 1
+                label[0][int(np.floor(i/float(self.step))-1)] = 1
             except:
                 pass
-        self.LabeledDF = np.concatenate((label.T, self.ManifoldTransformData), axis=1)
-        #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(LabeledDF[:,1:], LabeledDF[:,0], test_size=.4, random_state=0)
+        self.LabeledDF = np.concatenate((label.T, self.Feature), axis=1)
+        #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.LabeledDF[:,1:], self.LabeledDF[:,0], test_size=.4, random_state=0)
+        #print self.LabeledDF
         s = self.LabeledDF.shape[0]
-        self.X_train = self.LabeledDF[:s/2,1:]
-        self.X_test = self.LabeledDF[s/2:,1:]
-        self.y_train = self.LabeledDF[:s/2,0]
+        self.X_train = pd.DataFrame(self.LabeledDF[:s/2,1:])
+        self.X_test = pd.DataFrame(self.LabeledDF[s/2:,1:])
+        self.y_train = pd.DataFrame(self.LabeledDF[:s/2,:1])
         self.y_test = self.LabeledDF[s/2:,0]
     
-    def SupervisedTrain(self, model = 'GBRT'):
+    def SupervisedTrain(self, clf):
         """choose the model and use it to train the labeled data.
-            1. Spectral Clustering
-            2. Agglomerative Clustering
-            3. MiniBatch KMeans
         Parameters
         ----------
-        model: string, the model you select for supervised learning
+        clf: sklearn model, the model you select for supervised learning
         """
-        ClassfiedList = {"Nearest Neighbors": KNeighborsClassifier(3),
-                         "SVMLinear": SVC(kernel="linear", C=0.025),
-                         "SVMrbf": SVC(gamma=2, C=1),
-                         "Gaussian": GaussianProcessClassifier(1.0 * RBF(1.0), warm_start=True),
-                         "DT": DecisionTreeClassifier(max_depth=3, random_state=0),
-                         "RF": RandomForestClassifier(max_depth=3, n_estimators=10, max_features=1, random_state=0),
-                         "GBRT": GradientBoostingClassifier(random_state=0),
-                         "NeualNet": MLPClassifier(alpha=1, random_state=0),
-                         "Ada": AdaBoostClassifier(),
-                         "NB": GaussianNB(),
-                         "QDA": QuadraticDiscriminantAnalysis()}
-        self.clf =  ClassfiedList[model]
-        self.clf.fit(self.X_train, self.y_train)
+        self.clf = clf
+        self.clf.fit(self.X_train,self.y_train)
         return self.clf
     
     def CrossValidation(self):
@@ -218,16 +248,24 @@ class CountBubble():
         ----------
         component: 
         """
-        self.PredictTrain = self.clf.predict_proba(self.X_train)[:,1]
-        self.PredictTest = self.clf.predict_proba(self.X_test)[:,1]
-        print self.PredictTest
+        self.y_train = np.array(self.y_train)
+        try:
+            self.PredictTrainPro = self.clf.predict_proba(self.X_train)[:,1]
+            self.PredictTestPro = self.clf.predict_proba(self.X_test)[:,1]
+        except:
+            pass
+        self.PredictTrain = self.clf.predict(self.X_train)
+        self.PredictTest = self.clf.predict(self.X_test)
         n = 49
         print '-' * n
         print '\t\t|\ttrain\t|\ttest\t|'
         print '-' * n
-        print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T, self.PredictTrain),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTest),3))+'\t|'
-        print '-' * n
-        print '\tTPR\t|\t'+ str(np.round(np.sum(self.y_train * self.PredictTrain) / float(sum(self.y_train)),3))+'\t|\t'+str(np.round(np.sum(self.y_test * self.PredictTest) / float(sum(self.y_test)),3))+'\t|'
+        try:
+            print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T, self.PredictTrainPro),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3))+'\t|'
+            print '-' * n
+        except:
+            pass
+        print '\tTPR\t|\t'+ str(np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3))+'\t|\t'+str(np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3))+'\t|'
         print '-' * n
         '''
         plt.plot(self.y_test,'k')
@@ -235,6 +273,7 @@ class CountBubble():
         plt.ylim([-0.1,1.1])
         plt.show()
         '''
+        return np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category
@@ -431,3 +470,23 @@ class CountBubble():
             plt.ylim([min(alldata),max(alldata)])
             plt.title('Frame '+ str(index) + '/' + str(loop-1) + '\nresult count' + str(count[1]) + '\t' + str(count[0]) + '\t' + str(count[2]), fontsize=20)
             self.VisualizationPresent(plt, animation, speed)
+
+    def VisualizeManifoldwithLabel(self):
+        df = pd.DataFrame(self.X_test)
+        T = []
+        for i in xrange(df.shape[1]):
+            T.append('X' + str(i+1))
+        df.columns = T
+        label = pd.DataFrame(self.y_test)
+        label.columns = ['y']
+        plt.subplot(121)
+        plt.scatter(df[label.y == 0].X1,df[label.y == 0].X2, c = 'k')
+        plt.scatter(df[label.y == 1].X1,df[label.y == 1].X2,c = 'r')
+        plt.title('Condition')
+        plt.subplot(122)
+        label = pd.DataFrame(self.PredictTest)
+        label.columns = ['y']
+        plt.scatter(df[label.y == 0].X1,df[label.y == 0].X2, c = 'k')
+        plt.scatter(df[label.y == 1].X1,df[label.y == 1].X2,c = 'r')
+        plt.title('Predict')
+        plt.show()
