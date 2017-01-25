@@ -15,26 +15,28 @@ def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, pa
     bc.PrepareWP(smoothlevel, windows, step, packetlevel)#use wpe as feature
     return bc
 
-def VisualizeManifold(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel):
-    bc = GetAudioWPE(bc, filename, 
-                  StartTime, EndTime,
-                  smoothlevel, windows, step, 
-                  packetlevel)
-    bc.VisualizeDimensionReduction()
-    return bc
-
 def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.ResetFeature()
+    print bc.Feature.shape
     bc.AddManifoldTransform(bc.WPE, manifold1)
-    bc.AddManifoldTransform(bc.WPF, manifold2)
-    bc.AddWPEMax()
+    print bc.Feature.shape
+    #bc.AddManifoldTransform(bc.WPF, manifold2)
+    bc.AddPeak()
+    print bc.Feature.shape
+    #bc.AddFrequency()
+    print bc.Feature.shape
+    #bc.AddWPEMax()
+    print bc.Feature.shape
     bc.AddPeakEnergyRatio()
+    print bc.Feature.shape
     bc.AddMeanDeltaT()
-    bc.AddFlatness()
+    print bc.Feature.shape
+    #bc.AddFlatness()
+    print bc.Feature.shape
     bc.PrepareLabelDataFrame(labelfile)
-    for i in xrange(1,8):
+    for i in xrange(1,11):
         print 'max_depth is: {0}'.format(i) 
-        clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
+        #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
         clf = xgb.XGBClassifier(max_depth = i)
         clf = bc.SupervisedTrain(clf)
         score = bc.CrossValidation()
@@ -44,11 +46,6 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     log.write('\n')
     log.close()
     return clf
-
-def PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, preprocess, clf):
-    new = CB.CountBubble()
-    new = GetAudioWPE(new, newfile, start, end, smoothlevel, windows, step, packetlevel)
-    return new.SupervisedPredicting(preprocess, clf)
 
 warnings.filterwarnings("ignore")
 pool = Pool(4)
@@ -87,7 +84,7 @@ smoothlevel = 3
 packetlevel = 8
 windows = 8096
 step = windows / 2
-logfilename = 'xgbturning.log2'
+logfilename = 'xgbturning.log5'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')
@@ -97,7 +94,7 @@ for packetlevel in np.arange(3, 11):
     TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
     ClssifySnappingShrimp = CB.CountBubble()
     ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-    for neibour in np.arange(10, 20, 2):
+    for neibour in np.arange(10, 41, 5):
         for component in np.arange(2, 10):
             log = open(logfilename,'a')
             record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
@@ -107,5 +104,5 @@ for packetlevel in np.arange(3, 11):
             manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
             manifoldWPFlatnessModel = manifoldWPEnergyModel
             manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
-            manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
+            #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
             clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)

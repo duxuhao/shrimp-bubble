@@ -159,6 +159,16 @@ class CountBubble():
         """
         self.Feature = self.Feature[:,:1]
 
+    def AddFrequency(self):
+        Octave = np.array([0,2000,3000,4000, 5000, 8192, 16384, 32768, 65536, self.df.rate/2]) * self.windows / self.df.rate
+        self.Spectrum = np.abs(np.fft.rfftn(self.cutclip))
+        for i in range(len(Octave) - 1):
+            new = np.sum(self.Spectrum[:,Octave[i]:Octave[i+1]],axis = 1)
+            self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        new = np.argsort(self.Feature[:,1-len(Octave):], axis = 1)
+        self.Feature = np.concatenate((self.Feature,new), axis=1)
+        return new
+
     def AddManifoldTransform(self, df, manifold = 0):
         """using manifold learning to transform the high dimensional features to
         low dimension using the model trained in self.ManifoldTrain()
@@ -203,6 +213,13 @@ class CountBubble():
         """The Flatness of the signal.
         """
         new = np.exp(np.mean(np.log(np.abs(self.cutclip)),axis=1)) / np.mean(np.abs(self.cutclip),axis=1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
+    def AddPeak(self):
+        """The Peak of the signal.
+        """
+        new = np.max(self.cutclip,axis=1)
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
