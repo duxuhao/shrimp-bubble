@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 import seaborn as sns
 from sklearn import cluster
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score
 
 
@@ -235,8 +235,11 @@ class CountBubble():
         #df.time *= self.df.rate
         for i in df.Time:
             try:
-                label[0][int(np.ceil(i/float(self.step))-1)] = 1
-                label[0][int(np.floor(i/float(self.step))-1)] = 1
+                if self.step == self.windows:
+                    label[0][i/self.step] = 1
+                else:
+                    label[0][int(np.ceil(i/float(self.step))-1)] = 1
+                    label[0][int(np.floor(i/float(self.step))-1)] = 1
             except:
                 pass
         self.LabeledDF = np.concatenate((label.T, self.Feature), axis=1)
@@ -278,11 +281,21 @@ class CountBubble():
         print '\t\t|\ttrain\t|\ttest\t|'
         print '-' * n
         try:
-            print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T, self.PredictTrainPro),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3))+'\t|'
+            print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T[0], self.PredictTrainPro),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3))+'\t|'
             print '-' * n
         except:
             pass
-        print '\tTPR\t|\t'+ str(np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3))+'\t|\t'+str(np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3))+'\t|'
+        train = self.PredictTrain[:]
+        train[1:] += self.PredictTrain[:-1]
+        train[:-1] += self.PredictTrain[1:]
+        tprtrain = np.round(np.sum(self.y_train.T[0] * train.astype(bool)) / float(sum(self.y_train.T[0])),3)
+        #tprtrain = np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3)
+        test = self.PredictTest[:]
+        test[1:] += self.PredictTest[:-1]
+        test[:-1] += self.PredictTest[1:]
+        tprtest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
+        #tprtest = np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
+        print '\tTPR\t|\t'+ str(tprtrain)+'\t|\t'+str(tprtest)+'\t|'
         print '-' * n
         '''
         plt.plot(self.y_test,'k')
@@ -290,7 +303,8 @@ class CountBubble():
         plt.ylim([-0.1,1.1])
         plt.show()
         '''
-        return np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
+        #return np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3)
+        return tprtest
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category

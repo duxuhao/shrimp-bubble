@@ -1,0 +1,5377 @@
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.959
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.805
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.022
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.017
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.332
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.029
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.225
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.003
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.806
+hidden layer:	4	0.094
+hidden layer:	5	0.972
+hidden layer:	6	0.026
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.02
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.032
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.067
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.047
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.098
+hidden layer:	4	0.094
+hidden layer:	5	0.984
+hidden layer:	6	0.032
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.038
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.053
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.828
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.48
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.07
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.961
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.816
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.134
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.016
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.333
+hidden layer:	9	0.038
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.03
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.083
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.738
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.15
+hidden layer:	7	0.504
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.849
+hidden layer:	6	0.396
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.422
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.13
+hidden layer:	6	0.394
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.997
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.072
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.064
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.959
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.133
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.025
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.022
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.079
+hidden layer:	7	0.504
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.714
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.827
+hidden layer:	6	0.04
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.339
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.018
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.03
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.917
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.997
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.846
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.106
+hidden layer:	6	0.474
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.018
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.034
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.003
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.793
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.985
+hidden layer:	6	0.042
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.025
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.337
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.058
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.83
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.045
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.958
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.04
+hidden layer:	6	0.023
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.018
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.333
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.033
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.022
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.488
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.025
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.656
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.668
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.005
+hidden layer:	6	0.024
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.337
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.997
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.162
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.21
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.747
+hidden layer:	6	0.019
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.032
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.005
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.48
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.063
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.601
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.006
+hidden layer:	6	0.045
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.044
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.299
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.022
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.525
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.04
+hidden layer:	6	0.003
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.843
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.017
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.011
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.125
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.065
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.816
+hidden layer:	4	0.094
+hidden layer:	5	0.108
+hidden layer:	6	0.394
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.032
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.823
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.065
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.07
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.964
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.895
+hidden layer:	6	0.484
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.018
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.025
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.005
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.62
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.954
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.094
+hidden layer:	6	0.481
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.333
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.036
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.039
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.22
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.243
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.758
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.397
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.882
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.057
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.481
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.255
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.034
+hidden layer:	4	0.094
+hidden layer:	5	0.58
+hidden layer:	6	0.134
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.024
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.025
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.958
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.552
+hidden layer:	4	0.094
+hidden layer:	5	0.047
+hidden layer:	6	0.025
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.081
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.487
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.258
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.806
+hidden layer:	4	0.094
+hidden layer:	5	0.96
+hidden layer:	6	0.481
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.004
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.045
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.511
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.046
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.505
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.807
+hidden layer:	4	0.094
+hidden layer:	5	0.96
+hidden layer:	6	0.022
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.97
+hidden layer:	7	0.006
+hidden layer:	8	0.024
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.832
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.29
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.554
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.838
+hidden layer:	6	0.155
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.336
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.017
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.487
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.782
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.085
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.806
+hidden layer:	4	0.094
+hidden layer:	5	0.982
+hidden layer:	6	0.483
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.004
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.085
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.441
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.966
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.013
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.52
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.079
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.029
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.997
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.074
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.027
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.997
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.008
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.689
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.045
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.005
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.072
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.5
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.041
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.79
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.004
+hidden layer:	6	0.187
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.041
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.004
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.063
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.079
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.52
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.977
+hidden layer:	6	0.045
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.338
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.704
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.984
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.02
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.519
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.093
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.336
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.005
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.488
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.723
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.419
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.966
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.805
+hidden layer:	4	0.094
+hidden layer:	5	0.96
+hidden layer:	6	0.022
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.334
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.048
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.076
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.116
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.997
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.169
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.656
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.535
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.076
+hidden layer:	6	0.079
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.046
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.323
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.884
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.036
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.807
+hidden layer:	4	0.094
+hidden layer:	5	0.13
+hidden layer:	6	0.134
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.041
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.106
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.223
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.981
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.062
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.545
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.029
+hidden layer:	6	0.473
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.336
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.004
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.062
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.027
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.991
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.159
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.543
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.008
+hidden layer:	6	0.003
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.024
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.017
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.025
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.42
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.063
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.967
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.26
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.805
+hidden layer:	4	0.094
+hidden layer:	5	0.953
+hidden layer:	6	0.479
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.017
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.332
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.07
+hidden layer:	9	0.003
+hidden layer:	10	0.474
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.818
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.065
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.514
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.059
+hidden layer:	6	0.004
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.018
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.338
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.694
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.025
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.656
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.516
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.005
+hidden layer:	6	0.016
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.337
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.694
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.023
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.875
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.388
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.522
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.04
+hidden layer:	6	0.163
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.709
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.027
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.004
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.067
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.527
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.89
+hidden layer:	6	0.476
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.213
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.026
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.481
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.502
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.964
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.807
+hidden layer:	4	0.094
+hidden layer:	5	0.977
+hidden layer:	6	0.003
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.02
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.997
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.043
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.026
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.294
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.529
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.058
+hidden layer:	6	0.982
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.003
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.003
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	8	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.506
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.983
+hidden layer:	6	0.023
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.338
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.863
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.044
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.227
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.018
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.997
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.093
+hidden layer:	7	0.535
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.509
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.017
+hidden layer:	4	0.094
+hidden layer:	5	0.087
+hidden layer:	6	0.042
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.338
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.986
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.025
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.48
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.005
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.656
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.543
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.972
+hidden layer:	6	0.473
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.955
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.018
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.48
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.206
+hidden layer:	7	0.5
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.96
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.584
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.02
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.003
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.336
+hidden layer:	9	0.041
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.006
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.032
+hidden layer:	9	0.003
+hidden layer:	10	0.474
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.034
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.145
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.657
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.517
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.014
+hidden layer:	4	0.094
+hidden layer:	5	0.1
+hidden layer:	6	0.477
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.895
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.022
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.2
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.03
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.658
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.522
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.005
+hidden layer:	6	0.005
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.337
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.688
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.018
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.07
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.936
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.179
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.659
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.522
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.005
+hidden layer:	6	0.472
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.96
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.042
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.024
+hidden layer:	9	0.003
+hidden layer:	10	0.476
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.243
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.501
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	9	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.972
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.85
+hidden layer:	4	0.094
+hidden layer:	5	0.947
+hidden layer:	6	0.484
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.013
+hidden layer:	4	0.011
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.004
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.238
+hidden layer:	8	0.332
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.072
+hidden layer:	9	0.003
+hidden layer:	10	0.474
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.352
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	10	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.97
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.806
+hidden layer:	4	0.094
+hidden layer:	5	0.984
+hidden layer:	6	0.481
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.019
+hidden layer:	4	0.015
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.332
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.005
+hidden layer:	7	0.006
+hidden layer:	8	0.064
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.023
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.049
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	15	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.66
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.965
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.805
+hidden layer:	4	0.094
+hidden layer:	5	0.005
+hidden layer:	6	0.483
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.017
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.332
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.009
+hidden layer:	7	0.006
+hidden layer:	8	0.055
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.025
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.997
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	20	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.969
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.261
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.81
+hidden layer:	4	0.094
+hidden layer:	5	0.951
+hidden layer:	6	0.483
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.019
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.032
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.5
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.265
+hidden layer:	7	0.503
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	25	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.515
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.049
+hidden layer:	4	0.094
+hidden layer:	5	0.003
+hidden layer:	6	0.085
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.019
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.337
+hidden layer:	9	0.043
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.74
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.048
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.025
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.877
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.003
+hidden layer:	7	0.502
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	30	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.655
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.115
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.966
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.262
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.812
+hidden layer:	4	0.094
+hidden layer:	5	0.938
+hidden layer:	6	0.481
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.022
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.04
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.961
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.022
+hidden layer:	9	0.003
+hidden layer:	10	0.475
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.003
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.003
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.063
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	35	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.656
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	2
+hidden layer:	1	0.474
+hidden layer:	2	0.498
+hidden layer:	3	0.425
+hidden layer:	4	0.04
+hidden layer:	5	0.004
+hidden layer:	6	0.963
+hidden layer:	7	0.003
+hidden layer:	8	0.049
+hidden layer:	9	0.263
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	3
+hidden layer:	1	0.003
+hidden layer:	2	0.003
+hidden layer:	3	0.805
+hidden layer:	4	0.094
+hidden layer:	5	0.063
+hidden layer:	6	0.484
+hidden layer:	7	0.003
+hidden layer:	8	0.04
+hidden layer:	9	0.003
+hidden layer:	10	0.21
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	4
+hidden layer:	1	0.256
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.023
+hidden layer:	5	0.349
+hidden layer:	6	0.5
+hidden layer:	7	0.47
+hidden layer:	8	0.354
+hidden layer:	9	0.02
+hidden layer:	10	0.357
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	5
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.5
+hidden layer:	4	0.003
+hidden layer:	5	0.206
+hidden layer:	6	0.003
+hidden layer:	7	0.239
+hidden layer:	8	0.335
+hidden layer:	9	0.041
+hidden layer:	10	0.495
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	6
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.094
+hidden layer:	5	0.5
+hidden layer:	6	0.003
+hidden layer:	7	0.006
+hidden layer:	8	0.039
+hidden layer:	9	0.003
+hidden layer:	10	0.474
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	7
+hidden layer:	1	0.5
+hidden layer:	2	0.5
+hidden layer:	3	0.07
+hidden layer:	4	0.041
+hidden layer:	5	0.003
+hidden layer:	6	0.017
+hidden layer:	7	0.003
+hidden layer:	8	0.439
+hidden layer:	9	0.501
+hidden layer:	10	0.016
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	8
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.396
+hidden layer:	4	0.003
+hidden layer:	5	0.917
+hidden layer:	6	0.019
+hidden layer:	7	0.501
+hidden layer:	8	0.5
+hidden layer:	9	0.003
+hidden layer:	10	0.5
+----------------------------------------------------------------------
+Packetlevel	10	Neighbour	40	Component	9
+hidden layer:	1	0.5
+hidden layer:	2	0.003
+hidden layer:	3	0.003
+hidden layer:	4	0.654
+hidden layer:	5	0.003
+hidden layer:	6	0.003
+hidden layer:	7	0.114
+hidden layer:	8	0.085
+hidden layer:	9	0.5
+hidden layer:	10	0.066
+----------------------------------------------------------------------

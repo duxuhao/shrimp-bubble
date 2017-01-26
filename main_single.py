@@ -30,19 +30,12 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.AddPeakEnergyRatio()
     bc.AddMeanDeltaT()
     #bc.AddFlatness()
-    bc.PrepareLabelDataFrame(labelfile)
-    for i in xrange(1,11):
-        print 'max depth is: {0}'.format(i) 
-        #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
-        clf = xgb.XGBClassifier(max_depth = i)
-        #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
-        clf = bc.SupervisedTrain(clf)
-        score = bc.CrossValidation()
-        log = open(logfilename,'a')
-        log.write('hidden layer:\t' + str(i) +'\t'+ str(score) + '\n')
-    log.write('-'*70)
-    log.write('\n')
-    log.close()
+    bc.PrepareLabelDataFrame(labelfile) 
+    #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
+    clf = xgb.XGBClassifier(max_depth = 3)
+    #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
+    clf = bc.SupervisedTrain(clf)
+    score = bc.CrossValidation()
     return clf
 
 warnings.filterwarnings("ignore")
@@ -82,26 +75,19 @@ smoothlevel = 3
 packetlevel = 8
 windows = 8096
 step = windows / 2
-logfilename = 'xgbturningfixtpr.log'
-log = open(logfilename,'a')
-log.write('-'*70)
-log.write('\n')
-log.close()
-for packetlevel in np.arange(3, 11):
-    TrainManifoldSnappingShrimp = CB.CountBubble()
-    TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
-    ClssifySnappingShrimp = CB.CountBubble()
-    ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-    for neibour in np.arange(10, 41, 5):
-        for component in np.arange(2, 10):
-            log = open(logfilename,'a')
-            record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
-            log.write(record)
-            log.close()
-            print record
-            manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
-            #manifoldWPEnergyModel = manifold.Isomap(n_neighbors = 30, n_components=2)
-            manifoldWPFlatnessModel = manifoldWPEnergyModel
-            manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
-            #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
-            clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
+logfilename = 'xgbturningLLE.log'
+packetlevel = 4
+TrainManifoldSnappingShrimp = CB.CountBubble()
+TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
+ClssifySnappingShrimp = CB.CountBubble()
+ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
+neibour = 40
+component = 9
+record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
+print record
+manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
+#manifoldWPEnergyModel = manifold.Isomap(n_neighbors = 30, n_components=2)
+manifoldWPFlatnessModel = manifoldWPEnergyModel
+manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
+#manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
+clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
