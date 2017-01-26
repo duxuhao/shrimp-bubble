@@ -25,13 +25,13 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.AddManifoldTransform(bc.WPE, manifold1)
     #bc.AddManifoldTransform(bc.WPF, manifold2)
     bc.AddPeak()
-    #bc.AddFrequency()
-    #bc.AddWPEMax()
+    bc.AddFrequency()
+    bc.AddWPEMax()
     bc.AddPeakEnergyRatio()
     bc.AddMeanDeltaT()
-    #bc.AddFlatness()
+    bc.AddFlatness()
     bc.PrepareLabelDataFrame(labelfile)
-    for i in xrange(1,11):
+    for i in xrange(1,15):
         print 'max depth is: {0}'.format(i) 
         #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
         clf = xgb.XGBClassifier(max_depth = i)
@@ -82,7 +82,7 @@ smoothlevel = 3
 packetlevel = 8
 windows = 8096
 step = windows / 2
-logfilename = 'xgbturningfixtpr.log'
+logfilename = 'xgbturningfixtprmorefeature.log'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')
