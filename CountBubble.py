@@ -521,3 +521,20 @@ class CountBubble():
         plt.scatter(df[label.y == 1].X1,df[label.y == 1].X2,c = 'r')
         plt.title('Predict')
         plt.show()
+
+    def VisualizeClf(self,animation = 1, speed = 0.01):
+        s = self.LabeledDF.shape[0]
+        new = pd.DataFrame(self.LabeledDF[:,1:])
+        predict = self.clf.predict(new)
+        for i in range(s/2, s):
+            plt.figure(figsize=(16,8))
+            plt.subplot(121)
+            plt.plot(self.cutclip[i,:])
+            plt.ylim([-1500000, 1500000])
+            plt.subplot(122)
+            plt.plot(predict[i-10:i+10],'k',label = 'Prediction')
+            plt.plot(self.LabeledDF[i-10:i+10,0], 'r', label = 'Condiction')
+            plt.plot([10,10],[-0.1,1.1],'b',label = 'Here')
+            self.VisualizationPresent(plt, animation, speed)
+            
+           

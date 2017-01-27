@@ -8,7 +8,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
 from sklearn.naive_bayes import GaussianNB
-import xgboost as xgb
+#import xgboost as xgb
 from sklearn.gaussian_process import GaussianProcessClassifier
 from sklearn.gaussian_process.kernels import RBF
 from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
@@ -31,11 +31,12 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.AddMeanDeltaT()
     #bc.AddFlatness()
     bc.PrepareLabelDataFrame(labelfile) 
-    #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
-    clf = xgb.XGBClassifier(max_depth = 3)
+    clf = RandomForestClassifier(max_depth=7, n_estimators=10, random_state=0)
+    #clf = xgb.XGBClassifier(max_depth = 3)
     #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
     clf = bc.SupervisedTrain(clf)
     score = bc.CrossValidation()
+    bc.VisualizeClf()
     return clf
 
 warnings.filterwarnings("ignore")
@@ -51,7 +52,7 @@ ClassfiedList = {"Nearest Neighbors": KNeighborsClassifier(3),
                  "NeualNet": MLPClassifier(alpha=1, random_state=0),
                  "Ada": AdaBoostClassifier(),
                  "NB": GaussianNB(),
-                 "xgb": xgb.XGBClassifier(n_estimators=125, max_depth = 3, learning_rate = 0.05),
+                 #"xgb": xgb.XGBClassifier(n_estimators=125, max_depth = 3, learning_rate = 0.05),
                  "QDA": QuadraticDiscriminantAnalysis()
                          }
 
