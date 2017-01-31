@@ -132,11 +132,11 @@ class CountBubble():
         packlevel, higher frequency resolution and more generated features. 
         2^ packlevel must smaller than the frame data.
         """
-        print '-'*49 + '\n\tPreparing the WP\n' + '-'*49
+        #print '-'*49 + '\n\tPreparing the WP\n' + '-'*49
         self.smooth(smoothlevel)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
-        print '-'*49 + '\n\tFinish preparing the WP\n' + '-'*49
+        #print '-'*49 + '\n\tFinish preparing the WP\n' + '-'*49
         
     def ManifoldTrain(self, df, manimodel):
         """Transfer the high dimension WPE to lower dimension using the manifold
@@ -203,7 +203,7 @@ class CountBubble():
         below zero. For shrimp, the value should be relatively small
         """
         new = np.zeros(self.Feature.shape[0])
-        for i in range(self.Feature.shape[0] - 1):
+        for i in range(self.Feature.shape[1] - 1):
             new += (self.cutclip[:,i] * self.cutclip[:,i+1] < 0)
         new /= (self.windows-1)
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
@@ -324,7 +324,7 @@ class CountBubble():
         MyCluster = clusterlist[model]
         return MyCluster.fit_predict(self.Feature)
     
-    def SupervisedPredicting(self, preprocess1, clf):
+    def SupervisedPredict(self, clf):
         """A pipline to predict from raw data with the manofold model and
         classify model trained before.
         Parameters
@@ -332,8 +332,9 @@ class CountBubble():
         manifold: model, manifold learning model.
         clf: model, classify model
         """
-        return clf.predict(preprocess1.transform(self.Feature))
-        
+        self.prediction = clf.predict(pd.DataFrame(self.Feature))
+        return self.prediction        
+
     """visualization part"""
     def VisualizeTime(self):
         """Have a brief view on the data"""
@@ -522,19 +523,42 @@ class CountBubble():
         plt.title('Predict')
         plt.show()
 
-    def VisualizeClf(self,animation = 1, speed = 0.01):
+    def VisualizeClf(self, animation = 1, speed = 0.04):
         s = self.LabeledDF.shape[0]
         new = pd.DataFrame(self.LabeledDF[:,1:])
         predict = self.clf.predict(new)
         for i in range(s/2, s):
-            plt.figure(figsize=(16,8))
-            plt.subplot(121)
-            plt.plot(self.cutclip[i,:])
-            plt.ylim([-1500000, 1500000])
-            plt.subplot(122)
-            plt.plot(predict[i-10:i+10],'k',label = 'Prediction')
-            plt.plot(self.LabeledDF[i-10:i+10,0], 'r', label = 'Condiction')
-            plt.plot([10,10],[-0.1,1.1],'b',label = 'Here')
-            self.VisualizationPresent(plt, animation, speed)
-            
-           
+            if (predict[i] != self.LabeledDF[i,0]) | animation:
+                plt.figure(figsize=(12,6))
+                plt.subplot(121)
+                plt.plot(self.cutclip[i,:])
+                plt.ylim([-1500000, 1500000])
+                plt.subplot(122)
+                plt.plot(predict[i-10:i+10],'r',label = 'Prediction')
+                plt.plot(self.LabeledDF[i-10:i+10,0], 'k', label = 'Condiction')
+                plt.plot([10,10],[-0.1,1.1],'b',label = 'Here')
+                plt.title(str(i))
+                plt.legend()
+                self.VisualizationPresent(plt, animation, speed)
+
+    def VisualizeSupervisePrediction(self, animation = 1, speed = 0.01):
+        """Visualize the cluster result of the data. Different categories will be
+        present by different frame colors.
+        ----------
+        animation: bool, the switch of the figure presentation method. If it is
+        on, the frame will continue to move forward while if it is off, the figure
+        will present one by one manually.
+        speed: the speed to play the animation
+        """
+        alldata = self.data
+        framelocation = 5
+        color = ['r','g','y','c','m']
+        plt.figure(figsize=(16,8))
+        plt.plot(alldata, c = 'k')
+        for index in xrange(len(self.prediction)):
+            data = alldata[self.step*index:(self.step*index+self.windows)]
+            minnum = min(data)*1.1
+            maxnum = max(data)*1.1
+            self.VisualizeFrame(plt, minnum,maxnum, index, color[int(self.prediction[index])])
+        plt.title(str(self.start) + ' s')
+        plt.show()

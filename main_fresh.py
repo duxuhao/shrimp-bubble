@@ -25,13 +25,13 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.AddManifoldTransform(bc.WPE, manifold1)
     #bc.AddManifoldTransform(bc.WPF, manifold2)
     bc.AddPeak()
-    bc.AddFrequency()
+    #bc.AddFrequency()
     bc.AddWPEMax()
     bc.AddPeakEnergyRatio()
     bc.AddMeanDeltaT()
     bc.AddFlatness()
     bc.PrepareLabelDataFrame(labelfile)
-    for i in xrange(1,15):
+    for i in xrange(2, 8):
         print 'max depth is: {0}'.format(i) 
         #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
         clf = xgb.XGBClassifier(max_depth = i)
@@ -80,20 +80,20 @@ ClfStartTime = 0.0
 ClfEndTime = 146.0
 smoothlevel = 3
 packetlevel = 8
-windows = 8096
+windows = 2 ** 11
 step = windows / 2
-logfilename = 'xgbturningfixtprmorefeature.log'
+logfilename = 'xgbturning0130w111.log'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')
 log.close()
-for packetlevel in np.arange(3, 11):
+for packetlevel in np.arange(3, 8):
     TrainManifoldSnappingShrimp = CB.CountBubble()
     TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
     ClssifySnappingShrimp = CB.CountBubble()
     ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-    for neibour in np.arange(10, 41, 5):
-        for component in np.arange(2, 10):
+    for neibour in np.arange(30, 56, 5):
+        for component in np.arange(4, 12):
             log = open(logfilename,'a')
             record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
             log.write(record)
