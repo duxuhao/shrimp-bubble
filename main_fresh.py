@@ -25,6 +25,7 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.AddManifoldTransform(bc.WPE, manifold1)
     #bc.AddManifoldTransform(bc.WPF, manifold2)
     bc.AddPeak()
+    bc.AddMean()
     #bc.AddFrequency()
     bc.AddWPEMax()
     bc.AddPeakEnergyRatio()
@@ -80,9 +81,9 @@ ClfStartTime = 0.0
 ClfEndTime = 146.0
 smoothlevel = 3
 packetlevel = 8
-windows = 2 ** 11
+windows = 2 ** 13
 step = windows / 2
-logfilename = 'xgbturning0130w111.log'
+logfilename = 'xgbturning0130w13addmean.log'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')

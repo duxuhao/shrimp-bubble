@@ -223,6 +223,11 @@ class CountBubble():
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
+    def AddMean(self):
+        new = np.mean(np.abs(self.cutclip),axis=1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
     def PrepareLabelDataFrame(self, filename):
         """Convert the shrimp appearance time into label and make the label and 
         the origin frame into a dataframe.

@@ -20,7 +20,7 @@ def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, pa
     bc.PrepareWP(smoothlevel, windows, step, packetlevel)#use wpe as feature
     return bc
 
-def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
+def TrainClaasifier(bc, labelfile, manifold1, manifold2,clf):
     bc.ResetFeature()
     bc.AddManifoldTransform(bc.WPE, manifold1)
     #bc.AddManifoldTransform(bc.WPF, manifold2)
@@ -36,7 +36,7 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
     clf = bc.SupervisedTrain(clf)
     score = bc.CrossValidation()
-    bc.VisualizeClf(0)
+    #bc.VisualizeClf(0)
     return clf
 
 def ClaasifierPredict(bc, manifold1, manifold2, clf):
@@ -88,20 +88,18 @@ TrainStartTime = 0.0
 TrainEndTime = 80.0
 ClfStartTime = 0.0
 ClfEndTime = 146.0
-PreStartTime = 147.0
-PreEndTime = 600.0
+PreStartTime = 637.0
+PreEndTime = 648.0
 smoothlevel = 3
 packetlevel = 8
 windows = 2 ** 13
 step = windows / 2
-logfilename = 'xgbturningLLE.log'
-packetlevel = 4
+#logfilename = 'xgbturningLLE.log'
+packetlevel, neibour, component = 4, 35, 9
 TrainManifoldSnappingShrimp = CB.CountBubble()
 TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
 ClssifySnappingShrimp = CB.CountBubble()
 ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-neibour = 35
-component = 8
 record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
 print record
 manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
@@ -109,7 +107,12 @@ manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_c
 manifoldWPFlatnessModel = manifoldWPEnergyModel
 manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
-clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
+clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
+f = open('predictionlog.csv','a')
+f.write('------------------------------------------------------------------\n')
+f.write(record)
+f.write('Time,Quantity\n')
+f.close()
 for i in range(int(PreStartTime), int(PreEndTime)):
     PredictSnappingShrimp = CB.CountBubble()
     PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, filenamewithlabel, i, i+1, smoothlevel, windows, step, packetlevel)
@@ -118,4 +121,7 @@ for i in range(int(PreStartTime), int(PreEndTime)):
     for j in range(1,len(Prediction)-1):
         if sum(Prediction[j-1:j+2]) > 1.5:
             count[j] = 0.5
-    print '{0} to {1} s has {2} shrimps'.format(i, i+1, int(sum(count)))
+    record = '{0},{1}\n'.format(i, int(sum(count)))
+    f = open('predictionlog.csv','a')
+    f.write(record)
+    f.close()
