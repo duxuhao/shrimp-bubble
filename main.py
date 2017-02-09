@@ -7,6 +7,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
 from sklearn.naive_bayes import GaussianNB
+
 import xgboost as xgb
 
 def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel):
@@ -85,11 +86,11 @@ PredictStartTime = 0.0
 PredictEndTime = 125.0
 ClfStartTime = 0.0
 ClfEndTime = 146.0
-smoothlevel = 3
+smoothlevel = 2
 packetlevel = 8
-windows = 8096
+windows = 2**13
 step = windows / 2
-logfilename = 'xgbturning.log2'
+logfilename = 'xgbturningsmooth2.log'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')

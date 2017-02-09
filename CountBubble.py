@@ -206,6 +206,8 @@ class CountBubble():
         for i in range(self.Feature.shape[1] - 1):
             new += (self.cutclip[:,i] * self.cutclip[:,i+1] < 0)
         new /= (self.windows-1)
+        self.meandeltaT = new
+        #print new
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
@@ -296,9 +298,11 @@ class CountBubble():
         tprtrain = np.round(np.sum(self.y_train.T[0] * train.astype(bool)) / float(sum(self.y_train.T[0])),3)
         #tprtrain = np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3)
         test = self.PredictTest[:]
+        num = sum(test)
         test[1:] += self.PredictTest[:-1]
         test[:-1] += self.PredictTest[1:]
         tprtest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
+        #recalltest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
         #tprtest = np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
         print '\tTPR\t|\t'+ str(tprtrain)+'\t|\t'+str(tprtest)+'\t|'
         print '-' * n
@@ -309,7 +313,7 @@ class CountBubble():
         plt.show()
         '''
         #return np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3)
-        return tprtest
+        return tprtest, num
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category
@@ -338,7 +342,23 @@ class CountBubble():
         clf: model, classify model
         """
         self.prediction = clf.predict(pd.DataFrame(self.Feature))
-        return self.prediction        
+        width = np.zeros(len(self.prediction))
+        d2 = self.data
+        for sm in range(1,4+1):
+            d2[:-sm] += d2[sm:]
+        for i in range(len(self.prediction)):
+            if self.prediction[i]:
+                d = d2[i * self.step:(i * self.step + self.windows)]
+                peak = np.argmax(np.array(d))
+                w = 0
+                count = 0
+                while count <2:
+                    if (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
+                        w += 1
+                    else:
+                        count += 1
+                width[i] = w
+        return self.prediction, width        
 
     """visualization part"""
     def VisualizeTime(self):

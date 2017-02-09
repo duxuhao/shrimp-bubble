@@ -1,0 +1,3201 @@
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	4
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	5
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.929	97.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.929	97.0
+hidden layer:	6	0.929	97.0
+hidden layer:	7	0.929	97.0
+hidden layer:	8	0.929	97.0
+hidden layer:	9	0.929	97.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	6
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.929	97.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	7
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	98.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	8
+hidden layer:	2	0.976	101.0
+hidden layer:	3	0.952	99.0
+hidden layer:	4	0.952	101.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	9
+hidden layer:	2	0.976	102.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	102.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	10
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	99.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	20	Component	11
+hidden layer:	2	0.952	99.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	100.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	100.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	4
+hidden layer:	2	0.952	99.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	102.0
+hidden layer:	7	0.976	102.0
+hidden layer:	8	0.976	102.0
+hidden layer:	9	0.976	102.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	5
+hidden layer:	2	0.929	94.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	94.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	6
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	7
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	8
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.929	94.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	9
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	99.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	10
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	25	Component	11
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	4
+hidden layer:	2	0.952	99.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	100.0
+hidden layer:	5	0.952	101.0
+hidden layer:	6	0.952	100.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	5
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	100.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	100.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	6
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	102.0
+hidden layer:	6	0.976	102.0
+hidden layer:	7	0.976	102.0
+hidden layer:	8	0.976	102.0
+hidden layer:	9	0.976	102.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	7
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	100.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	8
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	100.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	9
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	10
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	30	Component	11
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	4
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.952	89.0
+hidden layer:	4	0.952	88.0
+hidden layer:	5	0.952	87.0
+hidden layer:	6	0.952	87.0
+hidden layer:	7	0.952	87.0
+hidden layer:	8	0.952	87.0
+hidden layer:	9	0.952	87.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	5
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	6
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	7
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	98.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	8
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	9
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	10
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	91.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	35	Component	11
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	91.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	4
+hidden layer:	2	0.952	88.0
+hidden layer:	3	0.952	88.0
+hidden layer:	4	0.952	87.0
+hidden layer:	5	0.952	88.0
+hidden layer:	6	0.952	89.0
+hidden layer:	7	0.952	89.0
+hidden layer:	8	0.952	89.0
+hidden layer:	9	0.952	89.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	5
+hidden layer:	2	0.976	90.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.952	86.0
+hidden layer:	5	0.952	86.0
+hidden layer:	6	0.976	89.0
+hidden layer:	7	0.976	89.0
+hidden layer:	8	0.976	89.0
+hidden layer:	9	0.976	89.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	6
+hidden layer:	2	0.976	91.0
+hidden layer:	3	0.952	88.0
+hidden layer:	4	0.952	88.0
+hidden layer:	5	0.952	87.0
+hidden layer:	6	0.952	86.0
+hidden layer:	7	0.952	86.0
+hidden layer:	8	0.952	86.0
+hidden layer:	9	0.952	86.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	7
+hidden layer:	2	0.976	91.0
+hidden layer:	3	0.952	90.0
+hidden layer:	4	0.952	91.0
+hidden layer:	5	0.952	88.0
+hidden layer:	6	0.952	88.0
+hidden layer:	7	0.952	88.0
+hidden layer:	8	0.952	88.0
+hidden layer:	9	0.952	88.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	8
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	91.0
+hidden layer:	4	0.952	90.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.976	92.0
+hidden layer:	7	0.976	92.0
+hidden layer:	8	0.976	92.0
+hidden layer:	9	0.976	92.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	9
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	89.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.976	92.0
+hidden layer:	7	0.976	92.0
+hidden layer:	8	0.976	92.0
+hidden layer:	9	0.976	92.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	10
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	91.0
+hidden layer:	4	0.952	90.0
+hidden layer:	5	0.952	89.0
+hidden layer:	6	0.952	89.0
+hidden layer:	7	0.952	89.0
+hidden layer:	8	0.952	89.0
+hidden layer:	9	0.952	89.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	40	Component	11
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	89.0
+hidden layer:	4	0.976	91.0
+hidden layer:	5	0.952	90.0
+hidden layer:	6	0.952	90.0
+hidden layer:	7	0.952	90.0
+hidden layer:	8	0.952	90.0
+hidden layer:	9	0.952	90.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	4
+hidden layer:	2	0.976	88.0
+hidden layer:	3	0.929	86.0
+hidden layer:	4	0.929	85.0
+hidden layer:	5	0.929	87.0
+hidden layer:	6	0.929	87.0
+hidden layer:	7	0.929	87.0
+hidden layer:	8	0.929	87.0
+hidden layer:	9	0.929	87.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	5
+hidden layer:	2	0.976	88.0
+hidden layer:	3	0.929	88.0
+hidden layer:	4	0.952	88.0
+hidden layer:	5	0.952	89.0
+hidden layer:	6	0.952	89.0
+hidden layer:	7	0.952	89.0
+hidden layer:	8	0.952	89.0
+hidden layer:	9	0.952	89.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	6
+hidden layer:	2	0.976	89.0
+hidden layer:	3	0.976	90.0
+hidden layer:	4	0.976	91.0
+hidden layer:	5	0.952	88.0
+hidden layer:	6	0.952	88.0
+hidden layer:	7	0.952	88.0
+hidden layer:	8	0.952	88.0
+hidden layer:	9	0.952	88.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	7
+hidden layer:	2	0.976	89.0
+hidden layer:	3	0.976	90.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	90.0
+hidden layer:	6	0.952	88.0
+hidden layer:	7	0.952	88.0
+hidden layer:	8	0.952	88.0
+hidden layer:	9	0.952	88.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	8
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	89.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	9
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	91.0
+hidden layer:	4	0.952	90.0
+hidden layer:	5	0.976	91.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	10
+hidden layer:	2	0.976	91.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.952	91.0
+hidden layer:	5	0.976	89.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	45	Component	11
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	91.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	4
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	5
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.952	92.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	6
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	7
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	8
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	9
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	10
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	50	Component	11
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	4
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	5
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	6
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	7
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	8
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	9
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	10
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	3	Neighbour	55	Component	11
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	4
+hidden layer:	2	1.0	95.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	5
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	6
+hidden layer:	2	0.952	99.0
+hidden layer:	3	0.976	104.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	7
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.976	104.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	8
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	103.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	102.0
+hidden layer:	6	0.976	102.0
+hidden layer:	7	0.976	102.0
+hidden layer:	8	0.976	102.0
+hidden layer:	9	0.976	102.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	9
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	103.0
+hidden layer:	4	0.976	102.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	10
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.976	101.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	20	Component	11
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.976	102.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	4
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.929	97.0
+hidden layer:	4	0.929	98.0
+hidden layer:	5	0.929	97.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	5
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.929	95.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	6
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.929	97.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	7
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.929	96.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	8
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.952	96.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	9
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	10
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.929	96.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	25	Component	11
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	4
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.929	95.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	5
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	6
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.976	103.0
+hidden layer:	4	0.952	104.0
+hidden layer:	5	0.952	103.0
+hidden layer:	6	0.952	103.0
+hidden layer:	7	0.952	103.0
+hidden layer:	8	0.952	103.0
+hidden layer:	9	0.952	103.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	7
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.976	103.0
+hidden layer:	4	0.952	104.0
+hidden layer:	5	0.952	104.0
+hidden layer:	6	0.952	104.0
+hidden layer:	7	0.952	104.0
+hidden layer:	8	0.952	104.0
+hidden layer:	9	0.952	104.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	8
+hidden layer:	2	0.976	103.0
+hidden layer:	3	0.952	103.0
+hidden layer:	4	0.952	104.0
+hidden layer:	5	0.952	104.0
+hidden layer:	6	0.952	104.0
+hidden layer:	7	0.952	104.0
+hidden layer:	8	0.952	104.0
+hidden layer:	9	0.952	104.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	9
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.952	103.0
+hidden layer:	4	0.976	105.0
+hidden layer:	5	0.976	106.0
+hidden layer:	6	0.976	106.0
+hidden layer:	7	0.976	106.0
+hidden layer:	8	0.976	106.0
+hidden layer:	9	0.976	106.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	10
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	102.0
+hidden layer:	4	0.952	104.0
+hidden layer:	5	0.952	104.0
+hidden layer:	6	0.952	104.0
+hidden layer:	7	0.952	104.0
+hidden layer:	8	0.952	104.0
+hidden layer:	9	0.952	104.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	30	Component	11
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	106.0
+hidden layer:	4	0.976	106.0
+hidden layer:	5	0.976	106.0
+hidden layer:	6	0.976	106.0
+hidden layer:	7	0.976	106.0
+hidden layer:	8	0.976	106.0
+hidden layer:	9	0.976	106.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	4
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	5
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	6
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	7
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	8
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	9
+hidden layer:	2	1.0	97.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	10
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	35	Component	11
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	4
+hidden layer:	2	0.976	103.0
+hidden layer:	3	0.976	105.0
+hidden layer:	4	0.976	105.0
+hidden layer:	5	0.976	104.0
+hidden layer:	6	0.976	104.0
+hidden layer:	7	0.976	104.0
+hidden layer:	8	0.976	104.0
+hidden layer:	9	0.976	104.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	5
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	6
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	7
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	8
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	9
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.952	98.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	10
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.952	96.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	40	Component	11
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	96.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	4
+hidden layer:	2	0.952	99.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	99.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	5
+hidden layer:	2	0.976	101.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	6
+hidden layer:	2	0.976	95.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	101.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	7
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	1.0	100.0
+hidden layer:	5	1.0	96.0
+hidden layer:	6	1.0	96.0
+hidden layer:	7	1.0	96.0
+hidden layer:	8	1.0	96.0
+hidden layer:	9	1.0	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	8
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	9
+hidden layer:	2	1.0	99.0
+hidden layer:	3	0.952	99.0
+hidden layer:	4	0.929	98.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	10
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	1.0	95.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	45	Component	11
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	4
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.905	89.0
+hidden layer:	5	0.905	90.0
+hidden layer:	6	0.905	90.0
+hidden layer:	7	0.905	90.0
+hidden layer:	8	0.905	90.0
+hidden layer:	9	0.905	90.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	5
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	6
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	7
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.905	88.0
+hidden layer:	5	0.905	87.0
+hidden layer:	6	0.905	87.0
+hidden layer:	7	0.905	87.0
+hidden layer:	8	0.905	87.0
+hidden layer:	9	0.905	87.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	8
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.905	88.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	89.0
+hidden layer:	6	0.905	89.0
+hidden layer:	7	0.905	89.0
+hidden layer:	8	0.905	89.0
+hidden layer:	9	0.905	89.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	9
+hidden layer:	2	0.905	88.0
+hidden layer:	3	0.881	87.0
+hidden layer:	4	0.881	87.0
+hidden layer:	5	0.881	87.0
+hidden layer:	6	0.881	87.0
+hidden layer:	7	0.881	87.0
+hidden layer:	8	0.881	87.0
+hidden layer:	9	0.881	87.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	10
+hidden layer:	2	0.905	89.0
+hidden layer:	3	0.881	87.0
+hidden layer:	4	0.905	88.0
+hidden layer:	5	0.905	88.0
+hidden layer:	6	0.905	88.0
+hidden layer:	7	0.905	88.0
+hidden layer:	8	0.905	88.0
+hidden layer:	9	0.905	88.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	50	Component	11
+hidden layer:	2	0.905	87.0
+hidden layer:	3	0.881	87.0
+hidden layer:	4	0.929	88.0
+hidden layer:	5	0.905	86.0
+hidden layer:	6	0.905	86.0
+hidden layer:	7	0.905	86.0
+hidden layer:	8	0.905	86.0
+hidden layer:	9	0.905	86.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	4
+hidden layer:	2	0.905	88.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.905	86.0
+hidden layer:	5	0.929	88.0
+hidden layer:	6	0.929	89.0
+hidden layer:	7	0.929	89.0
+hidden layer:	8	0.929	89.0
+hidden layer:	9	0.929	89.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	5
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.929	90.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	90.0
+hidden layer:	7	0.929	90.0
+hidden layer:	8	0.929	90.0
+hidden layer:	9	0.929	90.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	6
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.929	90.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	90.0
+hidden layer:	7	0.929	90.0
+hidden layer:	8	0.929	90.0
+hidden layer:	9	0.929	90.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	7
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	8
+hidden layer:	2	0.952	90.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	92.0
+hidden layer:	8	0.952	92.0
+hidden layer:	9	0.952	92.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	9
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.929	89.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	10
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	4	Neighbour	55	Component	11
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	4
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	5
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	6
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	7
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.952	91.0
+hidden layer:	6	0.952	90.0
+hidden layer:	7	0.952	90.0
+hidden layer:	8	0.952	90.0
+hidden layer:	9	0.952	90.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	8
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	9
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	10
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	20	Component	11
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	4
+hidden layer:	2	0.976	90.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	1.0	102.0
+hidden layer:	5	1.0	103.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	5
+hidden layer:	2	0.905	86.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	6
+hidden layer:	2	0.905	89.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.929	94.0
+hidden layer:	5	0.929	87.0
+hidden layer:	6	0.952	89.0
+hidden layer:	7	0.952	87.0
+hidden layer:	8	0.952	87.0
+hidden layer:	9	0.952	87.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	7
+hidden layer:	2	0.905	88.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.929	95.0
+hidden layer:	5	0.929	89.0
+hidden layer:	6	0.929	88.0
+hidden layer:	7	0.905	86.0
+hidden layer:	8	0.905	86.0
+hidden layer:	9	0.905	86.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	8
+hidden layer:	2	0.905	91.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.929	91.0
+hidden layer:	5	0.952	91.0
+hidden layer:	6	0.905	89.0
+hidden layer:	7	0.905	91.0
+hidden layer:	8	0.905	91.0
+hidden layer:	9	0.905	91.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	9
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	10
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	99.0
+hidden layer:	5	0.952	101.0
+hidden layer:	6	0.952	100.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	25	Component	11
+hidden layer:	2	0.952	100.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	101.0
+hidden layer:	7	0.952	101.0
+hidden layer:	8	0.952	101.0
+hidden layer:	9	0.952	101.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	4
+hidden layer:	2	0.952	90.0
+hidden layer:	3	0.952	90.0
+hidden layer:	4	0.952	90.0
+hidden layer:	5	0.952	88.0
+hidden layer:	6	0.952	89.0
+hidden layer:	7	0.952	90.0
+hidden layer:	8	0.952	90.0
+hidden layer:	9	0.952	90.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	5
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.952	90.0
+hidden layer:	4	0.952	89.0
+hidden layer:	5	0.929	89.0
+hidden layer:	6	0.929	88.0
+hidden layer:	7	0.929	88.0
+hidden layer:	8	0.929	88.0
+hidden layer:	9	0.929	88.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	6
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.952	90.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	89.0
+hidden layer:	6	0.929	90.0
+hidden layer:	7	0.929	89.0
+hidden layer:	8	0.929	89.0
+hidden layer:	9	0.929	89.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	7
+hidden layer:	2	0.952	90.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	92.0
+hidden layer:	7	0.929	92.0
+hidden layer:	8	0.929	92.0
+hidden layer:	9	0.929	92.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	8
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	9
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	10
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	30	Component	11
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.929	94.0
+hidden layer:	6	0.929	94.0
+hidden layer:	7	0.929	94.0
+hidden layer:	8	0.929	94.0
+hidden layer:	9	0.929	94.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	4
+hidden layer:	2	0.952	90.0
+hidden layer:	3	0.952	89.0
+hidden layer:	4	0.952	87.0
+hidden layer:	5	0.952	89.0
+hidden layer:	6	0.929	86.0
+hidden layer:	7	0.929	87.0
+hidden layer:	8	0.929	87.0
+hidden layer:	9	0.929	87.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	5
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.929	88.0
+hidden layer:	4	0.929	87.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	88.0
+hidden layer:	7	0.929	88.0
+hidden layer:	8	0.929	88.0
+hidden layer:	9	0.929	88.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	6
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.929	90.0
+hidden layer:	4	0.929	89.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	89.0
+hidden layer:	7	0.929	89.0
+hidden layer:	8	0.929	89.0
+hidden layer:	9	0.929	89.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	7
+hidden layer:	2	0.929	90.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.929	89.0
+hidden layer:	5	0.929	88.0
+hidden layer:	6	0.929	89.0
+hidden layer:	7	0.929	89.0
+hidden layer:	8	0.929	89.0
+hidden layer:	9	0.929	89.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	8
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	93.0
+hidden layer:	7	0.929	93.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	9
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	90.0
+hidden layer:	6	0.929	91.0
+hidden layer:	7	0.929	91.0
+hidden layer:	8	0.929	91.0
+hidden layer:	9	0.929	91.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	10
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	91.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	35	Component	11
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	90.0
+hidden layer:	5	0.929	89.0
+hidden layer:	6	0.929	89.0
+hidden layer:	7	0.929	89.0
+hidden layer:	8	0.929	89.0
+hidden layer:	9	0.929	89.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	4
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	100.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	100.0
+hidden layer:	8	0.952	100.0
+hidden layer:	9	0.952	100.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	5
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	6
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.952	99.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.952	100.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	7
+hidden layer:	2	0.929	96.0
+hidden layer:	3	0.952	99.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	98.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	8
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	99.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	9
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	10
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	40	Component	11
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	96.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	4
+hidden layer:	2	0.929	93.0
+hidden layer:	3	0.976	103.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	103.0
+hidden layer:	6	0.976	103.0
+hidden layer:	7	0.976	103.0
+hidden layer:	8	0.976	103.0
+hidden layer:	9	0.976	103.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	5
+hidden layer:	2	0.929	94.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	103.0
+hidden layer:	5	0.976	103.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	6
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	7
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	8
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	9
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	10
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	45	Component	11
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	4
+hidden layer:	2	1.0	94.0
+hidden layer:	3	0.952	91.0
+hidden layer:	4	0.952	88.0
+hidden layer:	5	0.929	87.0
+hidden layer:	6	0.929	87.0
+hidden layer:	7	0.929	87.0
+hidden layer:	8	0.929	87.0
+hidden layer:	9	0.929	87.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	5
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.952	92.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	6
+hidden layer:	2	0.976	91.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.952	92.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	92.0
+hidden layer:	8	0.952	92.0
+hidden layer:	9	0.952	92.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	7
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	8
+hidden layer:	2	0.929	87.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	89.0
+hidden layer:	5	0.929	91.0
+hidden layer:	6	0.929	91.0
+hidden layer:	7	0.929	91.0
+hidden layer:	8	0.929	91.0
+hidden layer:	9	0.929	91.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	9
+hidden layer:	2	0.905	87.0
+hidden layer:	3	0.929	94.0
+hidden layer:	4	0.929	94.0
+hidden layer:	5	0.929	95.0
+hidden layer:	6	0.929	95.0
+hidden layer:	7	0.929	95.0
+hidden layer:	8	0.929	95.0
+hidden layer:	9	0.929	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	10
+hidden layer:	2	0.881	87.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	94.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	93.0
+hidden layer:	7	0.929	93.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	50	Component	11
+hidden layer:	2	0.929	87.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.929	92.0
+hidden layer:	6	0.929	92.0
+hidden layer:	7	0.929	92.0
+hidden layer:	8	0.929	92.0
+hidden layer:	9	0.929	92.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	4
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.929	94.0
+hidden layer:	5	0.929	94.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	5
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	6
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	7
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	8
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	9
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	10
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	91.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	5	Neighbour	55	Component	11
+hidden layer:	2	0.976	92.0
+hidden layer:	3	0.976	92.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	91.0
+hidden layer:	6	0.976	91.0
+hidden layer:	7	0.976	91.0
+hidden layer:	8	0.976	91.0
+hidden layer:	9	0.976	91.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	4
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	5
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	6
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	7
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	8
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	92.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	9
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	10
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	20	Component	11
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	4
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	5
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	6
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	7
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	8
+hidden layer:	2	0.929	91.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	9
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	10
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	25	Component	11
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	92.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	4
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	5
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	6
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	100.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	7
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	8
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	9
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	100.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	10
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	30	Component	11
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	4
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	5
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	6
+hidden layer:	2	0.952	96.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	7
+hidden layer:	2	1.0	101.0
+hidden layer:	3	0.976	101.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	8
+hidden layer:	2	1.0	101.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	1.0	102.0
+hidden layer:	6	0.976	101.0
+hidden layer:	7	0.976	101.0
+hidden layer:	8	0.976	101.0
+hidden layer:	9	0.976	101.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	9
+hidden layer:	2	0.976	100.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	100.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	1.0	101.0
+hidden layer:	8	1.0	101.0
+hidden layer:	9	1.0	101.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	10
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.976	101.0
+hidden layer:	4	0.976	102.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	1.0	102.0
+hidden layer:	7	1.0	102.0
+hidden layer:	8	1.0	102.0
+hidden layer:	9	1.0	102.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	35	Component	11
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.976	102.0
+hidden layer:	4	0.976	101.0
+hidden layer:	5	0.976	101.0
+hidden layer:	6	1.0	102.0
+hidden layer:	7	1.0	102.0
+hidden layer:	8	1.0	102.0
+hidden layer:	9	1.0	102.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	4
+hidden layer:	2	1.0	99.0
+hidden layer:	3	1.0	102.0
+hidden layer:	4	1.0	103.0
+hidden layer:	5	1.0	103.0
+hidden layer:	6	1.0	105.0
+hidden layer:	7	1.0	105.0
+hidden layer:	8	1.0	105.0
+hidden layer:	9	1.0	105.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	5
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	99.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	99.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	6
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	7
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	96.0
+hidden layer:	7	0.952	96.0
+hidden layer:	8	0.952	96.0
+hidden layer:	9	0.952	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	8
+hidden layer:	2	0.952	98.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.952	97.0
+hidden layer:	5	0.952	95.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	9
+hidden layer:	2	0.976	101.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.952	98.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	10
+hidden layer:	2	0.976	101.0
+hidden layer:	3	0.952	98.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.952	97.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	40	Component	11
+hidden layer:	2	0.976	99.0
+hidden layer:	3	0.952	97.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.952	98.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	4
+hidden layer:	2	0.952	97.0
+hidden layer:	3	0.952	100.0
+hidden layer:	4	0.952	98.0
+hidden layer:	5	0.952	99.0
+hidden layer:	6	0.952	99.0
+hidden layer:	7	0.952	99.0
+hidden layer:	8	0.952	99.0
+hidden layer:	9	0.952	99.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	5
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.929	91.0
+hidden layer:	6	0.929	91.0
+hidden layer:	7	0.929	91.0
+hidden layer:	8	0.929	91.0
+hidden layer:	9	0.929	91.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	6
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.929	91.0
+hidden layer:	6	0.929	92.0
+hidden layer:	7	0.929	92.0
+hidden layer:	8	0.929	92.0
+hidden layer:	9	0.929	92.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	7
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	92.0
+hidden layer:	8	0.952	92.0
+hidden layer:	9	0.952	92.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	8
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	92.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	9
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.929	92.0
+hidden layer:	6	0.929	93.0
+hidden layer:	7	0.929	93.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	10
+hidden layer:	2	0.929	93.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.952	95.0
+hidden layer:	7	0.952	95.0
+hidden layer:	8	0.952	95.0
+hidden layer:	9	0.952	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	45	Component	11
+hidden layer:	2	0.905	91.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	93.0
+hidden layer:	7	0.929	94.0
+hidden layer:	8	0.929	94.0
+hidden layer:	9	0.929	94.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	4
+hidden layer:	2	1.0	97.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	5
+hidden layer:	2	1.0	95.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	92.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	6
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.952	94.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	7
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	8
+hidden layer:	2	0.929	91.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.952	92.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	9
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	92.0
+hidden layer:	8	0.952	92.0
+hidden layer:	9	0.952	92.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	10
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	50	Component	11
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	4
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.952	94.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.952	96.0
+hidden layer:	6	0.952	97.0
+hidden layer:	7	0.952	97.0
+hidden layer:	8	0.952	97.0
+hidden layer:	9	0.952	97.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	5
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.929	93.0
+hidden layer:	4	0.929	92.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	94.0
+hidden layer:	7	0.929	92.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	6
+hidden layer:	2	0.952	91.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	94.0
+hidden layer:	7	0.929	93.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	7
+hidden layer:	2	0.929	91.0
+hidden layer:	3	0.929	92.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.929	92.0
+hidden layer:	6	0.929	92.0
+hidden layer:	7	0.929	92.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	8
+hidden layer:	2	0.929	92.0
+hidden layer:	3	0.929	91.0
+hidden layer:	4	0.929	93.0
+hidden layer:	5	0.929	93.0
+hidden layer:	6	0.929	92.0
+hidden layer:	7	0.929	93.0
+hidden layer:	8	0.929	93.0
+hidden layer:	9	0.929	93.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	9
+hidden layer:	2	0.929	94.0
+hidden layer:	3	0.929	97.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.929	97.0
+hidden layer:	6	0.929	97.0
+hidden layer:	7	0.929	95.0
+hidden layer:	8	0.929	95.0
+hidden layer:	9	0.929	95.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	10
+hidden layer:	2	0.929	95.0
+hidden layer:	3	0.929	96.0
+hidden layer:	4	0.929	97.0
+hidden layer:	5	0.929	95.0
+hidden layer:	6	0.929	95.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	6	Neighbour	55	Component	11
+hidden layer:	2	0.929	94.0
+hidden layer:	3	0.905	94.0
+hidden layer:	4	0.929	96.0
+hidden layer:	5	0.929	96.0
+hidden layer:	6	0.929	96.0
+hidden layer:	7	0.929	96.0
+hidden layer:	8	0.929	96.0
+hidden layer:	9	0.929	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	4
+hidden layer:	2	1.0	96.0
+hidden layer:	3	1.0	98.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	5
+hidden layer:	2	1.0	97.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	99.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	6
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	7
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	8
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	9
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	10
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	20	Component	11
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	4
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	5
+hidden layer:	2	0.952	95.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	6
+hidden layer:	2	0.952	92.0
+hidden layer:	3	0.952	93.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	95.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	7
+hidden layer:	2	0.976	97.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	1.0	98.0
+hidden layer:	5	1.0	99.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	8
+hidden layer:	2	0.976	98.0
+hidden layer:	3	1.0	98.0
+hidden layer:	4	1.0	98.0
+hidden layer:	5	1.0	101.0
+hidden layer:	6	1.0	100.0
+hidden layer:	7	1.0	100.0
+hidden layer:	8	1.0	100.0
+hidden layer:	9	1.0	100.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	9
+hidden layer:	2	0.976	96.0
+hidden layer:	3	1.0	96.0
+hidden layer:	4	1.0	98.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	10
+hidden layer:	2	0.976	95.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	96.0
+hidden layer:	5	1.0	97.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	25	Component	11
+hidden layer:	2	0.976	98.0
+hidden layer:	3	1.0	100.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	1.0	99.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	4
+hidden layer:	2	1.0	98.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	5
+hidden layer:	2	1.0	98.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	96.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	6
+hidden layer:	2	1.0	99.0
+hidden layer:	3	1.0	101.0
+hidden layer:	4	1.0	98.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	7
+hidden layer:	2	1.0	97.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	8
+hidden layer:	2	1.0	100.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	1.0	101.0
+hidden layer:	5	1.0	101.0
+hidden layer:	6	1.0	100.0
+hidden layer:	7	1.0	100.0
+hidden layer:	8	1.0	100.0
+hidden layer:	9	1.0	100.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	9
+hidden layer:	2	1.0	99.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	1.0	101.0
+hidden layer:	5	1.0	100.0
+hidden layer:	6	1.0	100.0
+hidden layer:	7	1.0	100.0
+hidden layer:	8	1.0	100.0
+hidden layer:	9	1.0	100.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	10
+hidden layer:	2	1.0	98.0
+hidden layer:	3	0.976	100.0
+hidden layer:	4	1.0	100.0
+hidden layer:	5	1.0	100.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	30	Component	11
+hidden layer:	2	1.0	96.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	99.0
+hidden layer:	6	1.0	99.0
+hidden layer:	7	1.0	99.0
+hidden layer:	8	1.0	99.0
+hidden layer:	9	1.0	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	4
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	92.0
+hidden layer:	6	0.952	91.0
+hidden layer:	7	0.952	91.0
+hidden layer:	8	0.952	91.0
+hidden layer:	9	0.952	91.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	5
+hidden layer:	2	1.0	97.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	1.0	95.0
+hidden layer:	5	1.0	97.0
+hidden layer:	6	1.0	94.0
+hidden layer:	7	1.0	94.0
+hidden layer:	8	1.0	94.0
+hidden layer:	9	1.0	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	6
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	95.0
+hidden layer:	4	1.0	99.0
+hidden layer:	5	1.0	100.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	7
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	93.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	97.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	8
+hidden layer:	2	0.976	94.0
+hidden layer:	3	1.0	96.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	95.0
+hidden layer:	6	1.0	95.0
+hidden layer:	7	1.0	95.0
+hidden layer:	8	1.0	95.0
+hidden layer:	9	1.0	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	9
+hidden layer:	2	1.0	94.0
+hidden layer:	3	1.0	96.0
+hidden layer:	4	1.0	95.0
+hidden layer:	5	1.0	96.0
+hidden layer:	6	1.0	96.0
+hidden layer:	7	1.0	96.0
+hidden layer:	8	1.0	96.0
+hidden layer:	9	1.0	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	10
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	94.0
+hidden layer:	5	1.0	94.0
+hidden layer:	6	1.0	95.0
+hidden layer:	7	1.0	95.0
+hidden layer:	8	1.0	95.0
+hidden layer:	9	1.0	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	35	Component	11
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	97.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	4
+hidden layer:	2	1.0	96.0
+hidden layer:	3	1.0	96.0
+hidden layer:	4	1.0	95.0
+hidden layer:	5	1.0	95.0
+hidden layer:	6	1.0	95.0
+hidden layer:	7	1.0	96.0
+hidden layer:	8	1.0	96.0
+hidden layer:	9	1.0	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	5
+hidden layer:	2	1.0	95.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	95.0
+hidden layer:	5	1.0	95.0
+hidden layer:	6	1.0	95.0
+hidden layer:	7	1.0	95.0
+hidden layer:	8	1.0	95.0
+hidden layer:	9	1.0	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	6
+hidden layer:	2	1.0	98.0
+hidden layer:	3	1.0	96.0
+hidden layer:	4	1.0	94.0
+hidden layer:	5	1.0	95.0
+hidden layer:	6	1.0	96.0
+hidden layer:	7	1.0	94.0
+hidden layer:	8	1.0	94.0
+hidden layer:	9	1.0	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	7
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	94.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	8
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	9
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	93.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	10
+hidden layer:	2	0.976	93.0
+hidden layer:	3	0.976	93.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	40	Component	11
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.976	92.0
+hidden layer:	5	0.976	93.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	4
+hidden layer:	2	1.0	94.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	97.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	5
+hidden layer:	2	1.0	94.0
+hidden layer:	3	1.0	95.0
+hidden layer:	4	1.0	94.0
+hidden layer:	5	1.0	94.0
+hidden layer:	6	1.0	95.0
+hidden layer:	7	1.0	94.0
+hidden layer:	8	1.0	94.0
+hidden layer:	9	1.0	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	6
+hidden layer:	2	1.0	98.0
+hidden layer:	3	1.0	97.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	7
+hidden layer:	2	1.0	97.0
+hidden layer:	3	1.0	98.0
+hidden layer:	4	1.0	98.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	8
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	9
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	96.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	10
+hidden layer:	2	1.0	99.0
+hidden layer:	3	1.0	99.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	97.0
+hidden layer:	7	1.0	97.0
+hidden layer:	8	1.0	97.0
+hidden layer:	9	1.0	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	45	Component	11
+hidden layer:	2	1.0	98.0
+hidden layer:	3	1.0	98.0
+hidden layer:	4	1.0	97.0
+hidden layer:	5	1.0	98.0
+hidden layer:	6	1.0	98.0
+hidden layer:	7	1.0	98.0
+hidden layer:	8	1.0	98.0
+hidden layer:	9	1.0	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	4
+hidden layer:	2	0.952	93.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	96.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	5
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	99.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	96.0
+hidden layer:	8	0.976	96.0
+hidden layer:	9	0.976	96.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	6
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	100.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	7
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	100.0
+hidden layer:	5	0.976	99.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	8
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	100.0
+hidden layer:	7	0.976	100.0
+hidden layer:	8	0.976	100.0
+hidden layer:	9	0.976	100.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	9
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.952	96.0
+hidden layer:	4	0.952	95.0
+hidden layer:	5	0.952	98.0
+hidden layer:	6	0.952	98.0
+hidden layer:	7	0.952	98.0
+hidden layer:	8	0.952	98.0
+hidden layer:	9	0.952	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	10
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	99.0
+hidden layer:	4	0.976	96.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	50	Component	11
+hidden layer:	2	0.976	98.0
+hidden layer:	3	0.976	98.0
+hidden layer:	4	0.976	98.0
+hidden layer:	5	0.976	98.0
+hidden layer:	6	0.976	99.0
+hidden layer:	7	0.976	99.0
+hidden layer:	8	0.976	99.0
+hidden layer:	9	0.976	99.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	4
+hidden layer:	2	0.976	96.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	93.0
+hidden layer:	7	0.976	93.0
+hidden layer:	8	0.976	93.0
+hidden layer:	9	0.976	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	5
+hidden layer:	2	0.976	94.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	94.0
+hidden layer:	7	0.952	94.0
+hidden layer:	8	0.952	94.0
+hidden layer:	9	0.952	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	6
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.976	96.0
+hidden layer:	4	0.976	95.0
+hidden layer:	5	0.952	94.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	7
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.976	94.0
+hidden layer:	4	0.952	93.0
+hidden layer:	5	0.952	93.0
+hidden layer:	6	0.952	93.0
+hidden layer:	7	0.952	93.0
+hidden layer:	8	0.952	93.0
+hidden layer:	9	0.952	93.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	8
+hidden layer:	2	0.976	95.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	94.0
+hidden layer:	7	0.976	94.0
+hidden layer:	8	0.976	94.0
+hidden layer:	9	0.976	94.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	9
+hidden layer:	2	0.952	94.0
+hidden layer:	3	0.976	95.0
+hidden layer:	4	0.976	94.0
+hidden layer:	5	0.976	94.0
+hidden layer:	6	0.976	95.0
+hidden layer:	7	0.976	95.0
+hidden layer:	8	0.976	95.0
+hidden layer:	9	0.976	95.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	10
+hidden layer:	2	1.0	99.0
+hidden layer:	3	0.976	97.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	98.0
+hidden layer:	7	0.976	98.0
+hidden layer:	8	0.976	98.0
+hidden layer:	9	0.976	98.0
+----------------------------------------------------------------------
+Packetlevel	7	Neighbour	55	Component	11
+hidden layer:	2	1.0	99.0
+hidden layer:	3	0.952	95.0
+hidden layer:	4	0.976	97.0
+hidden layer:	5	0.976	97.0
+hidden layer:	6	0.976	97.0
+hidden layer:	7	0.976	97.0
+hidden layer:	8	0.976	97.0
+hidden layer:	9	0.976	97.0
+----------------------------------------------------------------------

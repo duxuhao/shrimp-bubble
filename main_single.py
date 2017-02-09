@@ -22,38 +22,76 @@ def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, pa
 
 def TrainClaasifier(bc, labelfile, manifold1, manifold2,clf):
     bc.ResetFeature()
-    bc.AddManifoldTransform(bc.WPE, manifold1)
-    #bc.AddManifoldTransform(bc.WPF, manifold2)
-    bc.AddPeak()
-    #bc.AddFrequency()
-    bc.AddWPEMax()
-    bc.AddPeakEnergyRatio()
-    bc.AddMeanDeltaT()
-    bc.AddFlatness()
-    bc.PrepareLabelDataFrame(labelfile) 
-    #clf = RandomForestClassifier(max_depth=7, n_estimators=10, random_state=0)
-    clf = xgb.XGBClassifier(max_depth = 3)
-    #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
+    featurelist = np.zeros(9)
+    bc.AddManifoldTransform(bc.WPE, manifold1);featurelist[0]=1
+    #bc.AddManifoldTransform(bc.WPF, manifold2);featurelist[1]=1
+    bc.AddPeak();featurelist[2]=1
+    bc.AddMean();featurelist[3]=1
+    #bc.AddFrequency();featurelist[4]=1
+    bc.AddWPEMax();featurelist[5]=1
+    bc.AddPeakEnergyRatio();featurelist[6]=1
+    bc.AddMeanDeltaT();featurelist[7]=1
+    bc.AddFlatness();featurelist[8]=1
+    bc.PrepareLabelDataFrame(labelfile)
+    clf = xgb.XGBClassifier(max_depth = 4)
     clf = bc.SupervisedTrain(clf)
     score = bc.CrossValidation()
     #bc.VisualizeClf(0)
-    return clf
+    return clf, featurelist
 
-def ClaasifierPredict(bc, manifold1, manifold2, clf):
-    bc.AddManifoldTransform(bc.WPE, manifold1)
-    #bc.AddManifoldTransform(bc.WPF, manifold2)
-    bc.AddPeak()
-    #bc.AddFrequency()
-    bc.AddWPEMax()
-    bc.AddPeakEnergyRatio()
-    bc.AddMeanDeltaT()
-    bc.AddFlatness()
-    #clf = RandomForestClassifier(max_depth=7, n_estimators=10, random_state=0)
-    #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
-    #score = bc.CrossValidation()
-    x = bc.SupervisedPredict(clf)
+def ClaasifierPredict(bc, manifold1, manifold2, clf, featurelist):
+    if featurelist[0]:
+        bc.AddManifoldTransform(bc.WPE, manifold1)
+    if featurelist[1]:
+        bc.AddManifoldTransform(bc.WPF, manifold2)
+    if featurelist[2]:
+        bc.AddPeak()
+    if featurelist[3]:
+        bc.AddMean()
+    if featurelist[4]:
+        bc.AddFrequency()
+    if featurelist[5]:
+        bc.AddWPEMax()
+    if featurelist[6]:
+        bc.AddPeakEnergyRatio()
+    if featurelist[7]:
+        bc.AddMeanDeltaT()
+    if featurelist[8]:
+        bc.AddFlatness()
+    x,w = bc.SupervisedPredict(clf)
+    for i in range(len(x)-1):
+        if (x[i] + x[i+1] == 2) & (w[i] == w[i+1]):
+            x[i] = 0
+            w[i] = 0
     #bc.VisualizeSupervisePrediction(0)
-    return x
+    return x, w
+
+def Predict(logfilename, StartTime, EndTime, smoothlevel, windows, step, packetlevel, clf, fealist, manifoldWPEnergyModel, manifoldWPFlatnessModel):
+    f = open(logfilename,'a')
+    f.write('Time,Width\n')
+    f.close()
+    total = 0
+    for i in range(int(PreStartTime), int(PreEndTime)):
+        PredictSnappingShrimp = CB.CountBubble()
+        PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, filenamewithlabel, i, i+1, smoothlevel, windows, step, packetlevel)
+        Prediction,Width = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
+        f = open(logfilename,'a')
+        presicetime = np.where(Prediction == 1)
+        for t,w in enumerate(Width[presicetime]):
+            f.write('{0},{1}\n'.format(np.round(i+float(presicetime[0][t]-0.5)/len(Prediction),3), w))
+        f.close()
+        total += 1
+        print '{0}\t'.format(total),
+
+
+def hist(filename, starttime, endtime, thres = 15):
+    df = pd.read_csv(filename)
+    df = df[df.Width > thres]
+    df.Width /= 192
+    plt.hist(df[(df.Time <= endtime) & (df.Time >= starttime)].Width,10,normed=1,alpha=0.75)
+    plt.xlabel('Width (ms)')
+    plt.ylabel('percentage')
+    plt.show()
 
 warnings.filterwarnings("ignore")
 pool = Pool(10)
@@ -88,14 +126,12 @@ TrainStartTime = 0.0
 TrainEndTime = 80.0
 ClfStartTime = 0.0
 ClfEndTime = 146.0
-PreStartTime = 637.0
-PreEndTime = 648.0
-smoothlevel = 3
-packetlevel = 8
+PreStartTime = 0.0
+PreEndTime = 60*12.0
+smoothlevel = 1
 windows = 2 ** 13
 step = windows / 2
-#logfilename = 'xgbturningLLE.log'
-packetlevel, neibour, component = 4, 35, 9
+packetlevel, neibour, component = 7, 35, 7
 TrainManifoldSnappingShrimp = CB.CountBubble()
 TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
 ClssifySnappingShrimp = CB.CountBubble()
@@ -103,25 +139,10 @@ ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, Cl
 record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
 print record
 manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
-#manifoldWPEnergyModel = manifold.Isomap(n_neighbors = 30, n_components=2)
 manifoldWPFlatnessModel = manifoldWPEnergyModel
 manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
-clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
-f = open('predictionlog.csv','a')
-f.write('------------------------------------------------------------------\n')
-f.write(record)
-f.write('Time,Quantity\n')
-f.close()
-for i in range(int(PreStartTime), int(PreEndTime)):
-    PredictSnappingShrimp = CB.CountBubble()
-    PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, filenamewithlabel, i, i+1, smoothlevel, windows, step, packetlevel)
-    Prediction = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
-    count = Prediction[:]
-    for j in range(1,len(Prediction)-1):
-        if sum(Prediction[j-1:j+2]) > 1.5:
-            count[j] = 0.5
-    record = '{0},{1}\n'.format(i, int(sum(count)))
-    f = open('predictionlog.csv','a')
-    f.write(record)
-    f.close()
+clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
+logfilename = 'predictionlog3.csv'
+#Predict(logfilename, PreStartTime, PreEndTime, smoothlevel, windows, step, packetlevel, clf, fealist,manifoldWPEnergyModel, manifoldWPFlatnessModel)
+#hist(logfilename, 0, 147)
