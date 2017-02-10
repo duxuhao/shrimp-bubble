@@ -1,4 +1,6 @@
 import wavio
+from scipy.spatial.distance import euclidean
+from fastdtw import fastdtw
 import numpy as np
 import pandas as pd
 import pywt
@@ -207,7 +209,6 @@ class CountBubble():
             new += (self.cutclip[:,i] * self.cutclip[:,i+1] < 0)
         new /= (self.windows-1)
         self.meandeltaT = new
-        #print new
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
@@ -227,6 +228,18 @@ class CountBubble():
 
     def AddMean(self):
         new = np.mean(np.abs(self.cutclip),axis=1)
+        self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
+        return new
+
+    def AddDTW(self):
+        signal = np.array(pd.read_csv('target.csv').d)
+        signal = signal / max(signal)
+        new = np.zeros(len(self.cutclip))
+        peak = np.argmax(abs(self.cutclip), axis = 1)
+        for i in range(len(self.cutclip)):
+            x = self.cutclip[i,peak[i]-150:peak[i]+150]
+            distance, path = fastdtw(x, signal * max(x), dist=euclidean)
+            new[i] = distance
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
@@ -349,11 +362,11 @@ class CountBubble():
         for i in range(len(self.prediction)):
             if self.prediction[i]:
                 d = d2[i * self.step:(i * self.step + self.windows)]
-                peak = np.argmax(np.array(d))
+                peak = np.argmax(np.array(np.abs(d)))
                 w = 0
                 count = 0
                 while count <2:
-                    if (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
+                    if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
                         w += 1
                     else:
                         count += 1

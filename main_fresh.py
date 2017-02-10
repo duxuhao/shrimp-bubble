@@ -24,13 +24,13 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
     bc.ResetFeature()
     bc.AddManifoldTransform(bc.WPE, manifold1)
     #bc.AddManifoldTransform(bc.WPF, manifold2)
-    bc.AddPeak()
-    bc.AddMean()
-    #bc.AddFrequency()
+    #bc.AddPeak()
+    #bc.AddMean()
+    bc.AddFrequency()
     bc.AddWPEMax()
-    bc.AddPeakEnergyRatio()
-    bc.AddMeanDeltaT()
-    bc.AddFlatness()
+    #bc.AddPeakEnergyRatio()
+    #bc.AddMeanDeltaT()
+    #bc.AddFlatness()
     bc.PrepareLabelDataFrame(labelfile)
     for i in xrange(2, 10):
         print 'max depth is: {0}'.format(i) 
@@ -83,7 +83,7 @@ smoothlevel = 1
 packetlevel = 8
 windows = 2 ** 13
 step = windows / 2
-logfilename = 'xgbturningfresh.log'
+logfilename = 'OnlyManifoldFrequency.log'
 log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')
