@@ -27,7 +27,7 @@ def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, pa
 
 def TrainClaasifier(bc, labelfile, manifold1, manifold2):
     bc.ResetFeature()
-    featurelist = np.zeros(9)
+    featurelist = np.zeros(100)
     bc.AddManifoldTransform(bc.WPE, manifold1);featurelist[0]=1
     #bc.AddManifoldTransform(bc.WPF, manifold2);featurelist[1]=1
     bc.AddPeak();featurelist[2]=1
@@ -37,6 +37,7 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2):
     bc.AddPeakEnergyRatio();featurelist[6]=1
     bc.AddMeanDeltaT();featurelist[7]=1
     bc.AddFlatness();featurelist[8]=1
+    #bc.AddDTW();featurelist[9]=1
     bc.PrepareLabelDataFrame(labelfile)
     clf = xgb.XGBClassifier(max_depth = 4)
     clf = bc.SupervisedTrain(clf)
@@ -63,6 +64,8 @@ def ClaasifierPredict(bc, manifold1, manifold2, clf, featurelist):
         bc.AddMeanDeltaT()
     if featurelist[8]:
         bc.AddFlatness()
+    if featurelist[9]:
+        bc.AddDTW()
     x,w = bc.SupervisedPredict(clf)
     for i in range(len(x)-1):
         if (x[i] + x[i+1] == 2) & (w[i] == w[i+1]):

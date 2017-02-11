@@ -232,14 +232,17 @@ class CountBubble():
         return new
 
     def AddDTW(self):
-        signal = np.array(pd.read_csv('target.csv').d)
+        signal = np.array(pd.read_csv('target.csv').d[100:])
         signal = signal / max(signal)
         new = np.zeros(len(self.cutclip))
         peak = np.argmax(abs(self.cutclip), axis = 1)
+        print 'Start Dynamic Time Warp'
         for i in range(len(self.cutclip)):
-            x = self.cutclip[i,peak[i]-150:peak[i]+150]
-            distance, path = fastdtw(x, signal * max(x), dist=euclidean)
-            new[i] = distance
+            try:
+                distance, path = fastdtw(self.cutclip[i,peak[i]-100:peak[i]+100], signal * self.cutclip[i,peak[i]], dist=euclidean)
+                new[i] = distance
+            except:
+                new[i] = 1000000000
         self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
         return new
 
