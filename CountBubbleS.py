@@ -28,7 +28,7 @@ class CountBubble():
         if self.filename != filename:
             self.filename = filename
             self.df = wavio.read(filename)
-        self.df.data = self.df.data / float(np.max(np.abs(self.df.data)))
+        self.df.data = self.df.data /1.0# float(np.max(np.abs(self.df.data)))
         self.start = start
         self.end = end
         #self.data = self.df.data[int(self.start * self.df.rate) : int(self.end * self.df.rate)]
