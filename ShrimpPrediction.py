@@ -1,3 +1,4 @@
+from sklearn.externals import joblib
 import time
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -20,9 +21,9 @@ from sklearn.neural_network import MLPClassifier
 
 def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel,averagelevel=0):
     bc.GetAudio(filename, StartTime, EndTime)
-    if averagelevel:
-        bc.data = bc.data * averagelevel / np.sqrt(np.mean(bc.data **2))
-    bc.PrepareWP(smoothlevel, windows, step, packetlevel)#use wpe as feature
+    #if averagelevel:
+        #bc.data = bc.data * averagelevel / np.sqrt(np.mean(bc.data **2))
+    bc.PrepareWP(smoothlevel, windows, step, packetlevel, StartTime, EndTime)#use wpe as feature
     return bc
 
 def TrainClaasifier(bc, labelfile, manifold1, manifold2):
@@ -30,22 +31,23 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2):
     featurelist = np.zeros(100)
     bc.AddManifoldTransform(bc.WPE, manifold1);featurelist[0]=1
     #bc.AddManifoldTransform(bc.WPF, manifold2);featurelist[1]=1
-    bc.AddPeak();featurelist[2]=1
-    bc.AddMean();featurelist[3]=1
-    #bc.AddFrequency();featurelist[4]=1
+    #bc.AddPeak();featurelist[2]=1
+    #bc.AddMean();featurelist[3]=1
+    bc.AddFrequency();featurelist[4]=1
     bc.AddWPEMax();featurelist[5]=1
-    bc.AddPeakEnergyRatio();featurelist[6]=1
-    bc.AddMeanDeltaT();featurelist[7]=1
-    bc.AddFlatness();featurelist[8]=1
-    #bc.AddDTW();featurelist[9]=1
+    #bc.AddPeakEnergyRatio();featurelist[6]=1
+    #bc.AddMeanDeltaT();featurelist[7]=1
+    #bc.AddFlatness();featurelist[8]=1
+    bc.AddDTW();featurelist[9]=1
     bc.PrepareLabelDataFrame(labelfile)
-    clf = xgb.XGBClassifier(max_depth = 4)
+    clf = xgb.XGBClassifier(max_depth = 3)
     clf = bc.SupervisedTrain(clf)
     score = bc.CrossValidation()
     #bc.VisualizeClf(0)
     return clf, featurelist
 
 def ClaasifierPredict(bc, manifold1, manifold2, clf, featurelist):
+    bc.ResetFeature()
     if featurelist[0]:
         bc.AddManifoldTransform(bc.WPE, manifold1)
     if featurelist[1]:
@@ -75,15 +77,18 @@ def ClaasifierPredict(bc, manifold1, manifold2, clf, featurelist):
     return x, w
 
 def Predict(logfilename,predictfile, StartTime, EndTime, smoothlevel, windows, step, packetlevel, clf, fealist, manifoldWPEnergyModel, manifoldWPFlatnessModel, averagelevel = 0):
-    f = open('output/'+logfilename,'a')
+    f = open('WPEFreDTWsl/'+logfilename,'a')
     f.write('Time,Width\n')
     f.close()
     total = 0
+    PredictSnappingShrimp = CB.CountBubble()
+    PredictSnappingShrimp.GetAudio(predictfile)
+    #print PredictSnappingShrimp.data
     for i in range(int(PreStartTime), int(PreEndTime)):
-        PredictSnappingShrimp = CB.CountBubble()
-        PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, predictfile, i, i+1, smoothlevel, windows, step, packetlevel, averagelevel)
+        PredictSnappingShrimp.PrepareWP(smoothlevel, windows, step, packetlevel, i, i+1)
+        #PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, predictfile, i, i+1, smoothlevel, windows, step, packetlevel, averagelevel)
         Prediction,Width = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
-        f = open('output/'+logfilename,'a')
+        f = open('WPEFreDTWsl/'+logfilename,'a')
         presicetime = np.where(Prediction == 1)
         for t,w in enumerate(Width[presicetime]):
             f.write('{0},{1}\n'.format(np.round(i+float(presicetime[0][t]-0.5)/len(Prediction),3), w))
@@ -93,13 +98,13 @@ def Predict(logfilename,predictfile, StartTime, EndTime, smoothlevel, windows, s
 
 
 def hist(filename, starttime, endtime, thres = 10):
-    df = pd.read_csv('output/'+filename)
+    df = pd.read_csv('WPEFreDTWsl/'+filename)
     df = df[df.Width > thres]
     df.Width /= 0.192
-    plt.hist(df[(df.Time <= endtime) & (df.Time >= starttime)].Width,10,alpha=0.75)
+    plt.hist(np.array(df[(df.Time <= endtime) & (df.Time >= starttime)].Width),10,alpha=0.75)
     plt.xlabel('Width (ms)')
     plt.ylabel('Shrimp Quantity (tail)')
-    plt.savefig('output/'+filename[:-4],dpi = 600)
+    plt.savefig('WPEFreDTWsl/'+filename[:-4],dpi = 600)
     plt.close()
 
 warnings.filterwarnings("ignore")
@@ -107,8 +112,8 @@ pool = Pool(12)
 smoothlevel = 1
 windows = 2 ** 13
 step = windows / 2
-packetlevel, neibour, component = 7, 35, 7
-
+packetlevel, neibour, component = 7, 30, 9
+'''
 ## train the manifold model
 filename = 'B18h01m41s17jul2014y.wav'
 TrainStartTime = 0.0
@@ -119,6 +124,7 @@ manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_c
 manifoldWPFlatnessModel = manifoldWPEnergyModel
 manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
+joblib.dump(manifoldWPEnergyModel, 'Manifold.pkl')
 
 ##train the classification model
 filenamewithlabel = 'B17h23m35s25apr2012y.wav'
@@ -128,25 +134,32 @@ ClfEndTime = 146
 ClssifySnappingShrimp = CB.CountBubble()
 ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
 ClfMean = np.sqrt(np.mean(ClssifySnappingShrimp.data **2))
+print ClfMean
 record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
 print record
 clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel)
+joblib.dump(clf, 'Classifier.pkl') 
+'''
 
 ## the prediction part
-
-
-predictionfilelist = ['B09h39m21s17jul2011y.wav','B11h08m25s24aug2007y.wav','B12h31m11s04oct2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B17h23m35s25apr2012y.wav','B12h08m04s29apr2008y.wav']
-for predictfile in predictionfilelist[:]:
+fealist = np.array([1,0,0,0,1,1,0,0,0,1])
+clf = joblib.load('Classifier.pkl')
+manifoldWPEnergyModel = joblib.load('Manifold.pkl')
+manifoldWPFlatnessModel = manifoldWPEnergyModel
+predictionfilelist = ['B17h23m35s25apr2012y.wav','B18h01m41s17jul2014y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
+for predictfile in predictionfilelist[-1:]:
     start = time.time()
     PreStartTime = 0.0
     PreEndTime = 200000
     logfilename = predictfile[:-4] + '.csv'
     try:
         try:
-            Predict(logfilename, predictfile, PreStartTime, PreEndTime, smoothlevel, windows, step, packetlevel, clf, fealist,manifoldWPEnergyModel, manifoldWPFlatnessModel, averagelevel = ClfMean)
+            Predict(logfilename, predictfile, PreStartTime, PreEndTime, smoothlevel, windows, step, packetlevel, clf, fealist,manifoldWPEnergyModel, manifoldWPFlatnessModel, averagelevel = 0)
         except:
-            hist(logfilename, PreStartTime, PreEndTime)
+            #hist(logfilename, PreStartTime, PreEndTime)
+            pass
     except:
         pass
     print predictfile,
     print 'used time consumption: {0}'.format(time.time() - start)
+

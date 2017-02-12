@@ -68,15 +68,15 @@ ClassfiedList = {"Nearest Neighbors": KNeighborsClassifier(3),
                  #"QDA": QuadraticDiscriminantAnalysis()
                          }
 
-manifoldlist = {'LLE': manifold.LocallyLinearEmbedding(n_neighbors=30, n_components=2,random_state=0),
-                'Spectral': manifold.SpectralEmbedding(n_components=2,n_neighbors=30,random_state=0),
-                'Iso': manifold.Isomap(n_neighbors = 30, n_components=2),
-                'MDS': manifold.MDS(n_components=2, max_iter=100),
+#manifoldlist = {'LLE': manifold.LocallyLinearEmbedding(n_neighbors=30, n_components=2,random_state=0),
+                #'Spectral': manifold.SpectralEmbedding(n_components=2,n_neighbors=30,random_state=0),
+                #'Iso': manifold.Isomap(n_neighbors = 30, n_components=2),
+                #'MDS': manifold.MDS(n_components=2, max_iter=100),
                 #'tsne': manifold.TSNE(n_components=component, init='pca', random_state=0)
-                }
+                #}
 
 clf =  ClassfiedList['RF']
-mani = manifoldlist['LLE']
+#mani = manifoldlist['LLE']
 filename = 'B18h01m41s17jul2014y.wav'
 filenamewithlabel = 'B17h23m35s25apr2012y.wav'
 labelfile = 'B17_Peak_Analysis.csv'
@@ -86,8 +86,8 @@ PredictStartTime = 0.0
 PredictEndTime = 125.0
 ClfStartTime = 0.0
 ClfEndTime = 146.0
-smoothlevel = 2
-packetlevel = 8
+smoothlevel = 1
+packetlevel = 6
 windows = 2**13
 step = windows / 2
 logfilename = 'xgbturningsmooth2.log'
@@ -95,6 +95,7 @@ log = open(logfilename,'a')
 log.write('-'*70)
 log.write('\n')
 log.close()
+'''
 for packetlevel in np.arange(3, 11):
     TrainManifoldSnappingShrimp = CB.CountBubble()
     TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
@@ -114,12 +115,14 @@ for packetlevel in np.arange(3, 11):
             clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
 
 '''
+SnappingShrimp = CB.CountBubble()
 #SnappingShrimp.GetAudio(filenamewithlabel, PredictStartTime, PredictEndTime)
 #SnappingShrimp.VisualizeTime()
 SnappingShrimp = GetAudioWPE(SnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
+SnappingShrimp.VisualizeWP()
 manifold = SnappingShrimp.ManifoldTrain(neibour, component)
 #VisualizeManifold(SnappingShrimp, filenamewithlabel, PredictStartTime, PredictEndTime, smoothlevel, windows, step, packetlevel)
 clf = TrainClaasifier(SnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel, labelfile,clf)
 #prediction = PipePredict(newfile, start, end, smoothlevel, windows, step, packetlevel, manifold, clf)
 #SnappingShrimp.VisualizeCluster(2)
-'''
+
