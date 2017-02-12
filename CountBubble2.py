@@ -28,6 +28,7 @@ class CountBubble():
         if self.filename != filename:
             self.filename = filename
             self.df = wavio.read(filename)
+        self.df.data = self.df.data / float(np.max(np.abs(self.df.data)))
         self.start = start
         self.end = end
         self.data = self.df.data[int(self.start * self.df.rate) : int(self.end * self.df.rate)]
@@ -39,9 +40,6 @@ class CountBubble():
         ----------
         windowlength: int, the length to average.
         """
-        #self.data = self.df.data[int(start * self.df.rate) : int(end * self.df.rate)].copy()#.astype(float)
-        #averagelevel = 11732.3596522 #the trained model data level
-        #self.data = self.data * averagelevel / np.sqrt(np.mean(self.data **2))
         self.smoothdata = self.data[windowlength:] / float(windowlength+1)
         for i in range(windowlength):
             self.smoothdata = self.smoothdata + self.data[i:i-windowlength] / float(windowlength+1)
@@ -162,7 +160,7 @@ class CountBubble():
         """For looping, the feature need to be reset as it store in the 
         class
         """
-        self.Feature = self.Feature[:,:1]
+        self.Feature = self.Feature[:,:2]
 
     def AddFrequency(self):
         Octave = np.array([0,2000,3000,4000, 5000, 8192, 16384, 32768, 65536, self.df.rate/2]) * self.windows / self.df.rate
@@ -236,7 +234,7 @@ class CountBubble():
 
     def AddDTW(self):
         signal = np.array(pd.read_csv('target.csv').d[100:])
-        signal = signal / float(max(signal))
+        signal = signal / max(signal)
         new = np.zeros(len(self.cutclip))
         peak = np.argmax(abs(self.cutclip), axis = 1)
         #print 'Start Dynamic Time Warp'
@@ -315,11 +313,14 @@ class CountBubble():
         train[1:] += self.PredictTrain[:-1]
         train[:-1] += self.PredictTrain[1:]
         tprtrain = np.round(np.sum(self.y_train.T[0] * train.astype(bool)) / float(sum(self.y_train.T[0])),3)
+        #tprtrain = np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3)
         test = self.PredictTest[:]
         num = sum(test)
         test[1:] += self.PredictTest[:-1]
         test[:-1] += self.PredictTest[1:]
         tprtest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
+        #recalltest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
+        #tprtest = np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
         print '\tTPR\t|\t'+ str(tprtrain)+'\t|\t'+str(tprtest)+'\t|'
         print '-' * n
         '''
@@ -328,7 +329,9 @@ class CountBubble():
         plt.ylim([-0.1,1.1])
         plt.show()
         '''
-        return tprtest, num
+        trainauc = np.round(roc_auc_score(self.y_train.T[0], self.PredictTrainPro),3)
+        testauc = np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3)
+        return trainauc, testauc, tprtrain, tprtest
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category
@@ -358,7 +361,7 @@ class CountBubble():
         """
         self.prediction = clf.predict(pd.DataFrame(self.Feature))
         width = np.zeros(len(self.prediction))
-        d2 = self.data.copy()
+        d2 = self.data
         for sm in range(1,4+1):
             d2[:-sm] += d2[sm:]
         for i in range(len(self.prediction)):
@@ -429,16 +432,15 @@ class CountBubble():
         at the same time.
         """
         dimen = self.WPE.shape
-        print dimen
-        packlevel = int(np.log2(dimen[1]))
+        packlevel = int(np.sqrt(dimen[1]))
         Energymatrix = np.zeros([len(self.WPE), packlevel+1, 2**packlevel])
         for clipindex in xrange(dimen[0]):
-            for i in xrange(dimen[1]-1):
+            for i in xrange(dimen[0]-1):
                 nodeLen = 2** (packlevel / (i+1))
                 level = int(np.floor(np.log2(i+1)))
                 index = i - (2 ** level - 1)
                 for count in xrange(nodeLen):
-                    Energymatrix[clipindex, level, count+index*nodeLen] = self.WPE[clipindex, i]
+                    Energymatrix[clipindex, level, count+index*nodeLen] = self.WPE[clipindex, i] * self.WPE[clipindex, -1]
         alldata = self.data
         maxnum = max(alldata)
         minnum = min(alldata)
@@ -449,13 +451,12 @@ class CountBubble():
             plt.plot(alldata[self.windows*(clipindex-n+1):self.windows*(clipindex+10)])
             plt.plot(np.array([self.windows,self.windows]) * (n-1),[-20000,20000],c = 'r')
             plt.plot(np.array([self.windows,self.windows]) * n,[-20000,20000],c = 'r')
-            #plt.ylim([maxnum,minnum])
+            plt.ylim([maxnum,minnum])
             plt.subplot(122)
             plt.imshow(Energymatrix[clipindex,:,:], cmap=cm.jet)
             ax = plt.gca()
             ax.set_aspect('auto')
             plt.colorbar()
-            plt.savefig('WPEmatrix',dpi = 600)
             plt.show()
     
     def VisualizeDimensionReduction(self, animation = 1, speed = 0.01):
