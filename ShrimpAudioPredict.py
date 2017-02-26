@@ -1,5 +1,5 @@
 import pandas as pd
-import CountBubbleS as CB
+import CountBubble_Normalized as CB
 import warnings
 import numpy as np
 from multiprocessing import Pool
@@ -139,7 +139,7 @@ PreEndTime = 60*12.0
 smoothlevel = 1
 windows = 2 ** 13
 step = windows / 2
-packetlevel, neibour, component = 7, 30, 9
+packetlevel, neibour, component = 4,44,7 #7, 30, 9
 TrainManifoldSnappingShrimp = CB.CountBubble()
 TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
 ClssifySnappingShrimp = CB.CountBubble()
@@ -152,10 +152,10 @@ manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldS
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
 clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
 
-dir = 'X'
-predictionfilelist = ['081218102553.wav','081218184245.wav','081219050350.wav']#['B17h23m35s25apr2012y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
+dir = 'test_set'
+predictionfilelist = ['B11h08m25s24aug2007y.wav', 'B16h03m56ssep2007y.wav', 'B18h17m19s19jan2009y.wav','B09h39m21s17jul2011y.wav','B12h35m21s29apr2008y.wav','B17h12m11s09jul2009y.wav','B17h23m35s25apr2012','B12h31m11s04oct2007y.wav']#['B17h23m35s25apr2012y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
 for predictfile in predictionfilelist[:]:
-    logfilename = predictfile[:-4]+'all.csv'
+    logfilename = predictfile[:-4]+'.csv'
     PreStartTime = 0.0
     PreEndTime = 60*100.0
     try:
