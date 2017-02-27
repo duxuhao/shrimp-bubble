@@ -45,6 +45,16 @@ class CountBubble():
         for i in range(windowlength):
             self.smoothdata = self.smoothdata + self.data[i:i-windowlength] / float(windowlength+1)
     
+    def butter_highpass(self, cutoff, order=5):
+        nyq = 0.5 * self.df.rate
+        normal_cutoff = cutoff / nyq
+        b, a = butter(order, normal_cutoff, btype='high', analog=False)
+        return b, a
+
+    def butter_highpass_filter(self, cutoff, order=5):
+        b, a = self.butter_highpass(cutoff, order=order)
+        self.smoothdata = lfilter(b, a, self.smoothdata)
+
     def CutwithWindows(self, windows, step):
         """cut the smooth audio signal into different frame for processing with
         certain window length and resolution.
@@ -138,6 +148,7 @@ class CountBubble():
         """
         #print '-'*49 + '\n\tPreparing the WP\n' + '-'*49
         self.smooth(smoothlevel, start, end)
+        #self.butter_highpass_filter(100)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
         #print '-'*49 + '\n\tFinish preparing the WP\n' + '-'*49
@@ -371,11 +382,20 @@ class CountBubble():
                 peak = np.argmax(np.array(np.abs(d)))
                 w = 0
                 count = 0
+                while count <3:
+                    if d[peak-w] * d[peak-w-1] < 0:
+                        count += 1
+                    elif (count == 2) & ((d[peak-w] - d[peak-w-1]) * (d[peak-w] - d[peak-w+1])>0):
+                        count += 1
+                    else:
+                        w += 1
+                '''
                 while count <2:
                     if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
                         w += 1
                     else:
                         count += 1
+                '''
                 width[i] = w
         return self.prediction, width        
 

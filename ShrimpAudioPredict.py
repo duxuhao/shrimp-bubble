@@ -35,7 +35,7 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2,clf):
     #bc.AddFlatness();featurelist[8]=1
     bc.AddDTW();featurelist[9]=1;print bc.Feature.shape
     bc.PrepareLabelDataFrame(labelfile)
-    clf = xgb.XGBClassifier(max_depth = 3)
+    clf = xgb.XGBClassifier(max_depth = 8)
     clf = bc.SupervisedTrain(clf)
     print clf.feature_importances_
     score = bc.CrossValidation()
