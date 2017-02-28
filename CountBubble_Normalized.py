@@ -1,4 +1,5 @@
 import wavio
+from scipy.signal import butter, lfilter, freqz
 from scipy.spatial.distance import euclidean
 from fastdtw import fastdtw
 import numpy as np
@@ -148,7 +149,7 @@ class CountBubble():
         """
         #print '-'*49 + '\n\tPreparing the WP\n' + '-'*49
         self.smooth(smoothlevel, start, end)
-        #self.butter_highpass_filter(100)
+        self.butter_highpass_filter(100)
         self.CutwithWindows(windows, step)
         self.waveletPacket(packetlevel)
         #print '-'*49 + '\n\tFinish preparing the WP\n' + '-'*49
@@ -282,10 +283,10 @@ class CountBubble():
         #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.LabeledDF[:,1:], self.LabeledDF[:,0], test_size=.4, random_state=0)
         #print self.LabeledDF
         s = self.LabeledDF.shape[0]
-        self.X_train = pd.DataFrame(self.LabeledDF[:,1:])
-        self.X_test = pd.DataFrame(self.LabeledDF[:,1:])
-        self.y_train = pd.DataFrame(self.LabeledDF[:,:1])
-        self.y_test = self.LabeledDF[:,0]
+        self.X_train = pd.DataFrame(self.LabeledDF[:s/2,1:])
+        self.X_test = pd.DataFrame(self.LabeledDF[s/2:,1:])
+        self.y_train = pd.DataFrame(self.LabeledDF[:s/2,0])
+        self.y_test = self.LabeledDF[s/2:,0]
     
     def SupervisedTrain(self, clf):
         """choose the model and use it to train the labeled data.
@@ -382,9 +383,11 @@ class CountBubble():
                 peak = np.argmax(np.array(np.abs(d)))
                 w = 0
                 count = 0
+                '''
                 while count <3:
                     if d[peak-w] * d[peak-w-1] < 0:
                         count += 1
+                        w+=1
                     elif (count == 2) & ((d[peak-w] - d[peak-w-1]) * (d[peak-w] - d[peak-w+1])>0):
                         count += 1
                     else:
@@ -393,9 +396,15 @@ class CountBubble():
                 while count <2:
                     if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
                         w += 1
+                    elif (count == 1) & (d[peak-w] / d[peak] < 0.05):
+                        count = 0
+                        w += 1
                     else:
                         count += 1
-                '''
+                    if w > 100:
+                        count = 2
+                        w = 0
+                
                 width[i] = w
         return self.prediction, width        
 

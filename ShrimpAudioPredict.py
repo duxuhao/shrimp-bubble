@@ -129,11 +129,13 @@ clf =  ClassfiedList['RF']
 mani = manifoldlist['LLE']
 filename = 'B18h01m41s17jul2014y.wav'
 filenamewithlabel = 'B17h23m35s25apr2012y.wav'
-labelfile = 'B17_Peak_Analysis.csv'
+#labelfile = 'B17_Peak_Analysis.csv'
+labelfile = 'sginal.csv'
 TrainStartTime = 0.0
 TrainEndTime = 80.0
 ClfStartTime = 0.0
-ClfEndTime = 146.0
+#ClfEndTime = 146.0
+ClfEndTime = 166
 PreStartTime = 0.0
 PreEndTime = 60*12.0
 smoothlevel = 1
@@ -151,17 +153,17 @@ manifoldWPFlatnessModel = manifoldWPEnergyModel
 manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
 clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
-
+'''
 dir = 'test_set'
 predictionfilelist = ['B11h08m25s24aug2007y.wav', 'B16h03m56ssep2007y.wav', 'B18h17m19s19jan2009y.wav','B09h39m21s17jul2011y.wav','B12h35m21s29apr2008y.wav','B17h12m11s09jul2009y.wav','B17h23m35s25apr2012','B12h31m11s04oct2007y.wav']#['B17h23m35s25apr2012y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
 for predictfile in predictionfilelist[:]:
-    logfilename = predictfile[:-4]+'.csv'
+    logfilename = predictfile[:-4]+'formal.csv'
     PreStartTime = 0.0
     PreEndTime = 60*100.0
     try:
         Predict(dir, logfilename,predictfile, PreStartTime, PreEndTime, smoothlevel, windows, step, packetlevel, clf, fealist,manifoldWPEnergyModel, manifoldWPFlatnessModel)
     except:
         pass
-
+'''
 #hist(logfilename, 0, 147)
 
