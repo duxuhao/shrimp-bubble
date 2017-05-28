@@ -1,5 +1,5 @@
 import pandas as pd
-import CountBubble as CB
+import CountBubble_Normalized as CB
 import warnings
 import numpy as np
 from multiprocessing import Pool
@@ -26,13 +26,13 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2,clf):
     featurelist = np.zeros(9)
     bc.AddManifoldTransform(bc.WPE, manifold1);featurelist[0]=1
     #bc.AddManifoldTransform(bc.WPF, manifold2);featurelist[1]=1
-    bc.AddPeak();featurelist[2]=1
-    bc.AddMean();featurelist[3]=1
+    #bc.AddPeak();featurelist[2]=1
+    #bc.AddMean();featurelist[3]=1
     #bc.AddFrequency();featurelist[4]=1
     bc.AddWPEMax();featurelist[5]=1
-    bc.AddPeakEnergyRatio();featurelist[6]=1
-    bc.AddMeanDeltaT();featurelist[7]=1
-    bc.AddFlatness();featurelist[8]=1
+    #bc.AddPeakEnergyRatio();featurelist[6]=1
+    #bc.AddMeanDeltaT();featurelist[7]=1
+    #bc.AddFlatness();featurelist[8]=1
     bc.PrepareLabelDataFrame(labelfile)
     clf = xgb.XGBClassifier(max_depth = 4)
     clf = bc.SupervisedTrain(clf)

@@ -18,7 +18,7 @@ class CountBubble():
         self.filename = ''
         sns.set_style("white")
     
-    def GetAudio(self, filename, start = 0, end = 0.1):
+    def GetAudio(self, filename, start = 0, end = 0.1, choosemax = 1):
         """Obtain the certain time section audio data from the origin wav file.
         Parameters
         ----------
@@ -29,7 +29,10 @@ class CountBubble():
         if self.filename != filename:
             self.filename = filename
             self.df = wavio.read(filename)
-        self.df.data = self.df.data / float(np.max(np.abs(self.df.data)))
+        if choosemax:
+            self.df.data = self.df.data / float(np.max(np.abs(self.df.data)))
+        else:
+            self.df.data = self.df.data / 3000000.0
         self.start = start
         self.end = end
         #self.data = self.df.data[int(self.start * self.df.rate) : int(self.end * self.df.rate)]

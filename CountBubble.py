@@ -117,7 +117,7 @@ class CountBubble():
             maxnumE = float(max(tempE))
             temp = list(np.array(tempE) / maxnumE) # this function will deliminate the effect of the amplitude
             self.maxWPE.append(maxnumE)
-            Energy.append(tempE)
+            Energy.append(temp)
             Flatness.append(tempF)
         self.maxWPE = np.array(self.maxWPE)
         self.WPE = np.matrix(Energy)
@@ -166,7 +166,7 @@ class CountBubble():
 
     def AddFrequency(self):
         Octave = np.array([0,2000,3000,4000, 5000, 8192, 16384, 32768, 65536, self.df.rate/2]) * self.windows / self.df.rate
-        self.Spectrum = np.abs(np.fft.rfftn(self.cutclip))
+        self.Spectrum = np.abs(np.fft.rfft(self.cutclip))
         for i in range(len(Octave) - 1):
             new = np.sum(self.Spectrum[:,Octave[i]:Octave[i+1]],axis = 1)
             self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)

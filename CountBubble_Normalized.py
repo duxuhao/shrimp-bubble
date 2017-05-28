@@ -383,16 +383,6 @@ class CountBubble():
                 peak = np.argmax(np.array(np.abs(d)))
                 w = 0
                 count = 0
-                '''
-                while count <3:
-                    if d[peak-w] * d[peak-w-1] < 0:
-                        count += 1
-                        w+=1
-                    elif (count == 2) & ((d[peak-w] - d[peak-w-1]) * (d[peak-w] - d[peak-w+1])>0):
-                        count += 1
-                    else:
-                        w += 1
-                '''
                 while count <2:
                     if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
                         w += 1
@@ -404,8 +394,16 @@ class CountBubble():
                     if w > 100:
                         count = 2
                         w = 0
-                
-                width[i] = w
+                count = 0
+                w2 = w
+                while count < 2:
+                    w2 += 1
+                    if d[peak - w2 + 1] * (d[peak - w2] - d[peak - w2 + 1]) * (count-0.5) < 0:
+                        count += 1
+                if w2 - w > 0.5 * w:
+                    width[i] = w
+                else:
+                    width[i] = (w2 + w) / 2.0
         return self.prediction, width        
 
     """visualization part"""

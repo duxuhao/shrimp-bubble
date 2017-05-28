@@ -17,7 +17,7 @@ from sklearn.neural_network import MLPClassifier
 
 
 def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel):
-    bc.GetAudio(filename, StartTime, EndTime)
+    bc.GetAudio(filename, StartTime, EndTime,choosemax = 0)
     bc.PrepareWP(smoothlevel, windows, step, packetlevel, StartTime, EndTime)#use wpe as feature
     return bc
 
@@ -77,7 +77,8 @@ def Predict(dir,logfilename, predictfile, StartTime, EndTime, smoothlevel, windo
     f.close()
     total = 0
     PredictSnappingShrimp = CB.CountBubble()
-    PredictSnappingShrimp.GetAudio(predictfile, StartTime, EndTime)
+    PredictSnappingShrimp.GetAudio(predictfile, StartTime, EndTime,choosemax = 0)
+    PredictSnappingShrimp.df.data = PredictSnappingShrimp.df.data
     for i in range(int(StartTime), int(EndTime)):
         PredictSnappingShrimp.PrepareWP(smoothlevel, windows, step, packetlevel, i, i+1)
         #PredictSnappingShrimp = CB.CountBubble()
@@ -139,7 +140,7 @@ PreEndTime = 60*12.0
 smoothlevel = 1
 windows = 2 ** 13
 step = windows / 2
-packetlevel, neibour, component = 4,44,7
+packetlevel, neibour, component = 7,30,9#4,44,7
 TrainManifoldSnappingShrimp = CB.CountBubble()
 TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
 ClssifySnappingShrimp = CB.CountBubble()
@@ -152,10 +153,10 @@ manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldS
 #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
 clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
 
-dir = 'H24'
-predictionfilelist = ['081218102553.wav','081218174038.wav','081218214904.wav','081219015730.wav','081219060556.wav','081219081009.wav','081219040143.wav','081218235317.wav','081218194451.wav','081218123006.wav']
+dir = 'Hist'
+predictionfilelist =['ColpoisRun4HPF.wav']#['B17h23m35s25apr2012y.wav']#['B18h39m48s26apr2012y.wav','B18h17m19s19jan2009y.wav','B18h01m41s17jul2014y.wav','B17h23m35s25apr2012y.wav','B17h12m11s09jul2009y.wav','B16h03m56s10sep2007y.wav','B12h35m21s29apr2008y.wav','B12h31m11s04oct2007y.wav','B09h39m21s17jul2011y.wav','B11h08m25s24aug2007y.wav']# ['081218102553.wav','081218174038.wav','081218214904.wav','081219015730.wav','081219060556.wav','081219081009.wav','081219040143.wav','081218235317.wav','081218194451.wav','081218123006.wav']
 for predictfile in predictionfilelist:
-    logfilename = predictfile[:-4]+'.csv'
+    logfilename = predictfile[:-4]+'nonnormalized.csv'
     PreStartTime = 0.0
     PreEndTime = 60*100.0
     try:
