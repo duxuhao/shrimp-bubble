@@ -1,3 +1,9 @@
 *.wav
 *.csv
 *.mov
+*.pkl
+*.pyc
+*.log
+*.png
+*.txt
+*.xlxs
