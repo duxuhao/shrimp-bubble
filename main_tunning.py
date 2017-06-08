@@ -1,4 +1,4 @@
-import CountBubble as CB
+import CountBubble_Normalized as CB
 import warnings
 import numpy as np
 from multiprocessing import Pool
@@ -16,33 +16,23 @@ from sklearn.neural_network import MLPClassifier
 
 
 def GetAudioWPE(bc, filename, StartTime, EndTime, smoothlevel, windows, step, packetlevel):
-    bc.GetAudio(filename, StartTime, EndTime)
-    bc.PrepareWP(smoothlevel, windows, step, packetlevel)#use wpe as feature
+    bc.GetAudio(filename,StartTime, EndTime)
+    bc.PrepareWP(smoothlevel, windows, step, packetlevel, StartTime, EndTime)#use wpe as feature
     return bc
 
-def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename):
+def TrainClaasifier(bc, labelfile, manifold1, manifold2, clf, logfilename,packetlevel, neibour, component):
     bc.ResetFeature()
     bc.AddManifoldTransform(bc.WPE, manifold1)
-    #bc.AddManifoldTransform(bc.WPF, manifold2)
-    #bc.AddPeak()
-    #bc.AddMean()
     bc.AddFrequency()
-    #bc.AddWPEMax()
-    #bc.AddPeakEnergyRatio()
-    #bc.AddMeanDeltaT()
-    #bc.AddFlatness()
+    bc.AddWPEMax()
     bc.PrepareLabelDataFrame(labelfile)
-    for i in xrange(2, 10):
+    for i in xrange(2, 12):
         print 'max depth is: {0}'.format(i) 
-        #clf = RandomForestClassifier(max_depth=i, n_estimators=10, random_state=0)
         clf = xgb.XGBClassifier(max_depth = i)
-        #clf = MLPClassifier(hidden_layer_sizes = (i * 10,), random_state=0)
         clf = bc.SupervisedTrain(clf)
-        score, num = bc.CrossValidation()
+        trainauc,teatauc,traintpr,testtpr,trainfpr,testfpr = bc.CrossValidation()
         log = open(logfilename,'a')
-        log.write('hidden layer:\t' + str(i) +'\t'+ str(score)+ '\t' + str(num) + '\n')
-    log.write('-'*70)
-    log.write('\n')
+        log.write('{0},{1},{2},{3},{4},{5},{6},{7},{8},{9}\n'.format(packetlevel, neibour, component,i,trainauc,teatauc,traintpr,testtpr,trainfpr,testfpr))
     log.close()
     return clf
 
@@ -83,26 +73,22 @@ smoothlevel = 1
 packetlevel = 8
 windows = 2 ** 13
 step = windows / 2
-logfilename = 'OnlyManifoldFrequency.log'
+logfilename = '2905turning.log'
 log = open(logfilename,'a')
-log.write('-'*70)
-log.write('\n')
+log.write('Packetlevel,Neighbour,Component,Depth,Train_AUC,Test_AUC,Train_TPR,Test_TPR,Train_FPR,Test_FPR\n')
 log.close()
-for packetlevel in np.arange(3, 8):
+for packetlevel in np.arange(4, 8):
     TrainManifoldSnappingShrimp = CB.CountBubble()
     TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
     ClssifySnappingShrimp = CB.CountBubble()
     ClssifySnappingShrimp = GetAudioWPE(ClssifySnappingShrimp, filenamewithlabel, ClfStartTime, ClfEndTime, smoothlevel, windows, step, packetlevel)
-    for neibour in np.arange(20, 56, 5):
-        for component in np.arange(4, 12):
-            log = open(logfilename,'a')
+    ClssifySnappingShrimp.AddDTW()
+    for neibour in np.arange(20, 56, 4):
+        for component in np.arange(5, 13):
             record = 'Packetlevel\t{0}\tNeighbour\t{1}\tComponent\t{2}\n'.format(packetlevel, neibour, component)
-            log.write(record)
-            log.close()
             print record
             manifoldWPEnergyModel = manifold.LocallyLinearEmbedding(n_neighbors=neibour, n_components=component,random_state=0)
-            #manifoldWPEnergyModel = manifold.Isomap(n_neighbors = 30, n_components=2)
             manifoldWPFlatnessModel = manifoldWPEnergyModel
             manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPE, manifoldWPEnergyModel)
-            #manifoldWPFlatnessModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldSnappingShrimp.WPF, manifoldWPFlatnessModel)
-            clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename)
+            clf = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf, logfilename, packetlevel, neibour, component)
+

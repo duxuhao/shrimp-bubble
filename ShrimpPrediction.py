@@ -87,11 +87,11 @@ def Predict(logfilename,predictfile, StartTime, EndTime, smoothlevel, windows, s
     for i in range(int(PreStartTime), int(PreEndTime)):
         PredictSnappingShrimp.PrepareWP(smoothlevel, windows, step, packetlevel, i, i+1)
         #PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, predictfile, i, i+1, smoothlevel, windows, step, packetlevel, averagelevel)
-        Prediction,Width = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
+        Prediction,Width, Peak = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
         f = open('WPEFreDTW/'+logfilename,'a')
         presicetime = np.where(Prediction == 1)
         for t,w in enumerate(Width[presicetime]):
-            f.write('{0},{1}\n'.format(np.round(i+float(presicetime[0][t]-0.5)/len(Prediction),3), w))
+            f.write('{0},{1}\n'.format(np.round(i+float(Peak[presicetime][t])/len(Prediction),3), w))
         f.close()
         total += 1
         #print '{0}\t'.format(total),

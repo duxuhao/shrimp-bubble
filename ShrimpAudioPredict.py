@@ -35,10 +35,10 @@ def TrainClaasifier(bc, labelfile, manifold1, manifold2,clf):
     #bc.AddFlatness();featurelist[8]=1
     bc.AddDTW();featurelist[9]=1;print bc.Feature.shape
     bc.PrepareLabelDataFrame(labelfile)
-    clf = xgb.XGBClassifier(max_depth = 8)
+    clf = xgb.XGBClassifier(max_depth = 3)
     clf = bc.SupervisedTrain(clf)
     print clf.feature_importances_
-    score = bc.CrossValidation()
+    #score = bc.CrossValidation()
     #bc.VisualizeClf(0)
     return clf, featurelist
 
@@ -63,13 +63,13 @@ def ClaasifierPredict(bc, manifold1, manifold2, clf, featurelist):
         bc.AddFlatness()
     if featurelist[9]:
         bc.AddDTW()
-    x,w = bc.SupervisedPredict(clf)
+    x,w,p = bc.SupervisedPredict(clf)
     for i in range(len(x)-1):
         if (x[i] + x[i+1] == 2) & (w[i] == w[i+1]):
             x[i] = 0
             w[i] = 0
     #bc.VisualizeSupervisePrediction(0)
-    return x, w
+    return x, w, p
 
 def Predict(dir,logfilename, predictfile, StartTime, EndTime, smoothlevel, windows, step, packetlevel, clf, fealist, manifoldWPEnergyModel, manifoldWPFlatnessModel):
     f = open(dir + '/' + logfilename,'a')
@@ -82,11 +82,11 @@ def Predict(dir,logfilename, predictfile, StartTime, EndTime, smoothlevel, windo
         PredictSnappingShrimp.PrepareWP(smoothlevel, windows, step, packetlevel, i, i+1)
         #PredictSnappingShrimp = CB.CountBubble()
         #PredictSnappingShrimp = GetAudioWPE(PredictSnappingShrimp, predictfile, i, i+1, smoothlevel, windows, step, packetlevel)
-        Prediction,Width = ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
+        Prediction, Width, Peak= ClaasifierPredict(PredictSnappingShrimp, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf,fealist)
         f = open(dir + '/' + logfilename,'a')
         presicetime = np.where(Prediction == 1)
         for t,w in enumerate(Width[presicetime]):
-            f.write('{0},{1}\n'.format(np.round(i+float(presicetime[0][t]-0.5)/len(Prediction),3), w))
+            f.write('{0},{1}\n'.format(np.round(i+float(presicetime[0][t]-1)/len(Prediction)+Peak[presicetime][t]/float(PredictSnappingShrimp.rate),3), w))
         f.close()
         total += 1
         print '{0}\t'.format(total),
@@ -134,14 +134,13 @@ labelfile = 'sginal.csv'
 TrainStartTime = 0.0
 TrainEndTime = 80.0
 ClfStartTime = 0.0
-#ClfEndTime = 146.0
-ClfEndTime = 166
+ClfEndTime = 146.0
 PreStartTime = 0.0
 PreEndTime = 60*12.0
 smoothlevel = 1
 windows = 2 ** 13
 step = windows / 2
-packetlevel, neibour, component = 4,44,7 #7, 30, 9
+packetlevel, neibour, component = 4,44,8#7, 30, 9
 TrainManifoldSnappingShrimp = CB.CountBubble()
 TrainManifoldSnappingShrimp = GetAudioWPE(TrainManifoldSnappingShrimp, filename, TrainStartTime, TrainEndTime, smoothlevel, windows, step,  packetlevel)
 ClssifySnappingShrimp = CB.CountBubble()
@@ -155,9 +154,9 @@ manifoldWPEnergyModel = TrainManifoldSnappingShrimp.ManifoldTrain(TrainManifoldS
 clf, fealist = TrainClaasifier(ClssifySnappingShrimp, labelfile, manifoldWPEnergyModel, manifoldWPFlatnessModel, clf)
 
 dir = 'test_new'
-predictionfilelist = ['B17h23m35s25apr2012y.wav']#'B11h08m25s24aug2007y.wav', 'B16h03m56ssep2007y.wav', 'B18h17m19s19jan2009y.wav','B09h39m21s17jul2011y.wav','B12h35m21s29apr2008y.wav','B17h12m11s09jul2009y.wav','B17h23m35s25apr2012','B12h31m11s04oct2007y.wav']#['B17h23m35s25apr2012y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
+predictionfilelist = ['B17h23m35s25apr2012y.wav','B12h11m09s30apr2017y.wav']#'B11h08m25s24aug2007y.wav', 'B16h03m56ssep2007y.wav', 'B18h17m19s19jan2009y.wav','B09h39m21s17jul2011y.wav','B12h35m21s29apr2008y.wav','B17h12m11s09jul2009y.wav','B17h23m35s25apr2012','B12h31m11s04oct2007y.wav']#['B17h23m35s25apr2012y.wav','B09h39m21s17jul2011y.wav','B17h12m11s09jul2009y.wav','B18h17m19s19jan2009y.wav','B18h39m48s26apr2012y.wav','B18h01m41s17jul2014y.wav','B12h31m11s04oct2007y.wav','B11h08m25s24aug2007y.wav','B12h35m21s29apr2008y.wav','B16h03m56s10sep2007y.wav','B12h08m04s29apr2008y.wav']
 for predictfile in predictionfilelist[:]:
-    logfilename = predictfile[:-4]+'new.csv'
+    logfilename = predictfile[:-4]+'new3.csv'
     PreStartTime = 0.0
     PreEndTime = 60*100.0
     try:

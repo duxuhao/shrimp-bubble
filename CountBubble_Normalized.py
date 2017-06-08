@@ -29,6 +29,7 @@ class CountBubble():
         if self.filename != filename:
             self.filename = filename
             self.df = wavio.read(filename)
+        self.rate = self.df.rate
         self.df.data = self.df.data / float(np.max(np.abs(self.df.data)))
         self.start = start
         self.end = end
@@ -177,7 +178,7 @@ class CountBubble():
 
     def AddFrequency(self):
         Octave = np.array([0,2000,3000,4000, 5000, 8192, 16384, 32768, 65536, self.df.rate/2]) * self.windows / self.df.rate
-        self.Spectrum = np.abs(np.fft.rfftn(self.cutclip))
+        self.Spectrum = np.abs(np.fft.rfft(self.cutclip))
         for i in range(len(Octave) - 1):
             new = np.sum(self.Spectrum[:,Octave[i]:Octave[i+1]],axis = 1)
             self.Feature = np.concatenate((self.Feature,new.reshape([-1,1])), axis=1)
@@ -283,10 +284,10 @@ class CountBubble():
         #self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(self.LabeledDF[:,1:], self.LabeledDF[:,0], test_size=.4, random_state=0)
         #print self.LabeledDF
         s = self.LabeledDF.shape[0]
-        self.X_train = pd.DataFrame(self.LabeledDF[:s/2,1:])
-        self.X_test = pd.DataFrame(self.LabeledDF[s/2:,1:])
-        self.y_train = pd.DataFrame(self.LabeledDF[:s/2,0])
-        self.y_test = self.LabeledDF[s/2:,0]
+        self.X_train = pd.DataFrame(self.LabeledDF[:s-1,1:])
+        self.X_test = pd.DataFrame(self.LabeledDF[s-1:,1:])
+        self.y_train = pd.DataFrame(self.LabeledDF[:s-1,0])
+        self.y_test = self.LabeledDF[s-1:,0]
     
     def SupervisedTrain(self, clf):
         """choose the model and use it to train the labeled data.
@@ -318,33 +319,26 @@ class CountBubble():
         print '\t\t|\ttrain\t|\ttest\t|'
         print '-' * n
         try:
-            print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T[0], self.PredictTrainPro),3))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3))+'\t|'
+            print '\tAUC\t|\t'+ str(np.round(roc_auc_score(self.y_train.T[0], self.PredictTrainPro),6))+'\t|\t'+str(np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),6))+'\t|'
             print '-' * n
         except:
             pass
         train = self.PredictTrain[:]
         train[1:] += self.PredictTrain[:-1]
         train[:-1] += self.PredictTrain[1:]
-        tprtrain = np.round(np.sum(self.y_train.T[0] * train.astype(bool)) / float(sum(self.y_train.T[0])),3)
-        #tprtrain = np.round(np.sum(self.y_train.T[0] * self.PredictTrain) / float(sum(self.y_train.T[0])),3)
+        tprtrain = np.round(np.sum(self.y_train.T[0] * train.astype(bool)) / float(sum(self.y_train.T[0])),6)
+        fprtrain = np.round(np.sum((self.PredictTrain.ravel() - self.y_train.T[0].ravel()) == 1) / float(sum(self.y_train.T[0])),6)
         test = self.PredictTest[:]
         num = sum(test)
         test[1:] += self.PredictTest[:-1]
         test[:-1] += self.PredictTest[1:]
-        tprtest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
-        #recalltest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),3)
-        #tprtest = np.round(np.sum(self.PredictTest * self.y_test) / float(sum(self.y_test)),3)
+        tprtest = np.round(np.sum(test.astype(bool) * self.y_test) / float(sum(self.y_test)),6)
+        fprtest = np.round(np.sum((self.PredictTest.ravel() - self.y_test.ravel()) == 1) / float(sum(self.y_test)),6)
         print '\tTPR\t|\t'+ str(tprtrain)+'\t|\t'+str(tprtest)+'\t|'
         print '-' * n
-        '''
-        plt.plot(self.y_test,'k')
-        plt.plot(self.PredictTest,'r')
-        plt.ylim([-0.1,1.1])
-        plt.show()
-        '''
         trainauc = np.round(roc_auc_score(self.y_train.T[0], self.PredictTrainPro),3)
         testauc = np.round(roc_auc_score(self.y_test.T, self.PredictTestPro),3)
-        return trainauc, testauc, tprtrain, tprtest
+        return trainauc, testauc, tprtrain, tprtest, fprtrain, fprtest
     
     def ClusterTrain(self, component = 2, model = 'Agglomerative'):
         """Using cluster method to divide the sample into different category
@@ -374,37 +368,50 @@ class CountBubble():
         """
         self.prediction = clf.predict(pd.DataFrame(self.Feature))
         width = np.zeros(len(self.prediction))
+        Peak = np.zeros(len(self.prediction))
         d2 = self.data.copy()
         for sm in range(1,4+1):
             d2[:-sm] += d2[sm:]
         for i in range(len(self.prediction)):
             if self.prediction[i]:
                 d = d2[i * self.step:(i * self.step + self.windows)]
-                peak = np.argmax(np.array(np.abs(d)))
                 w = 0
-                count = 0
-                while count <2:
-                    if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
-                        w += 1
-                    elif (count == 1) & (d[peak-w] / d[peak] < 0.05):
-                        count = 0
-                        w += 1
+                peak = 0
+                nn = 1
+                while w == 0:
+                    peak += np.argmax(np.array(np.abs(d[peak+6:])))+6
+                    count = 0
+                    while count <2:
+                        if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
+                            w += 1
+                        elif (count == 1) & (d[peak-w] / d[peak] < 0.05):
+                            count = 0
+                            w += 1
+                        else:
+                            count += 1
+                        if w > 100:
+                            count = 2
+                            w = 0
+                            nn = 0
+                if nn:
+                    count = 0
+                    w2 = w
+                    while count < 2:
+                        w2 += 1
+                        if d[peak - w2 + 1] * (d[peak - w2] - d[peak - w2 + 1]) * (count-0.5) < 0:
+                            count += 1
+                    if w2 - w > 0.1 * w:
+                        width[i] = w
                     else:
-                        count += 1
-                    if w > 100:
-                        count = 2
-                        w = 0
-                count = 0
-                w2 = w
-                while count < 2:
-                    w2 += 1
-                    if d[peak - w2 + 1] * (d[peak - w2] - d[peak - w2 + 1]) * (count-0.5) < 0:
-                        count += 1
-                if w2 - w > 0.5 * w:
-                    width[i] = w
+                        width[i] = (w2 + w) / 2.0
                 else:
-                    width[i] = (w2 + w) / 2.0
-        return self.prediction, width        
+                    width[i] = w
+                Peak[i] = peak
+                if width[i] < 10:
+                    width[i] = 0
+                    Peak[i] = 0
+                    self.prediction[i] = 0
+        return self.prediction, width, Peak        
 
     """visualization part"""
     def VisualizeTime(self):

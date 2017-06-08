@@ -358,6 +358,7 @@ class CountBubble():
         """
         self.prediction = clf.predict(pd.DataFrame(self.Feature))
         width = np.zeros(len(self.prediction))
+        Peak = np.zeros(len(self.prediction))
         d2 = self.data.copy()
         for sm in range(1,4+1):
             d2[:-sm] += d2[sm:]
@@ -370,10 +371,26 @@ class CountBubble():
                 while count <2:
                     if d[peak] * (d[peak-w] - d[peak-w-1]) * (count-0.5) < 0:
                         w += 1
+                    elif (count == 1) & (d[peak-w] / d[peak] < 0.05):
+                        count = 0
+                        w += 1
                     else:
                         count += 1
-                width[i] = w
-        return self.prediction, width        
+                    if w > 100:
+                        count = 2
+                        w = 0
+                count = 0
+                w2 = w
+                while count < 2:
+                    w2 += 1
+                    if d[peak - w2 + 1] * (d[peak - w2] - d[peak - w2 + 1]) * (count-0.5) < 0:
+                        count += 1
+                if w2 - w > 0.5 * w:
+                    width[i] = w
+                else:
+                    width[i] = (w2 + w) / 2.0
+                Peak[i] = peak
+        return self.prediction, width, Peak 
 
     """visualization part"""
     def VisualizeTime(self):
